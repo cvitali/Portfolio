@@ -1,0 +1,20 @@
+{
+    "hero_title1":"Hello, I'm",
+    "hero_title2":"Corinne VITALI",
+    "hero_subtitle":"Full-stack web developer, specialized in C#/.NET",
+    "hero_text1":"For years, I worked in sales management, eyes buried in numbers, spreadsheets and forecasts. I loved the analysis and I adored finding solutions to my clients' problems, but over time, one thing was missing: the feeling of actually building something. One day, I realized that I needed a job where I could see the tangible result of my efforts, a bit like a mason who sees his wall rise brick by brick. That's what led me to web development.",
+    "hero_text2":"The front-end immediately seduced me: starting from a blank page, imagining, shaping, seeing a project come to life before my eyes. Then I discovered the back-end, and I loved this methodical, almost artisanal progression where every little step contributes to a complex and coherent functionality. Today, I fully realize myself in this profession where logic, creativity and construction meet.<br><br>After completing an online training, I obtained my professional title of Concepteur‑Developer of digital solutions in December 2025. I am now looking for a junior developer position where I can continue to develop my skills and contribute to exciting projects.",
+    "hero_text3":"",
+    "sectionStrengths_title":"My",
+    "sectionStrengths_subtitle":"Strengths",
+    "sectionStrengths_text":"Thanks to my experience in customer relations, I bring a resolutely user-centered approach to development. <br> I know how to analyze a need, ask the right questions and sometimes turn unclear expectations into concrete solutions. <br> <br> Accustomed to communicating with varied interlocutors, I facilitate exchanges between technical and non-technical teams. <br> This sensitivity allows me to design intuitive interfaces, prioritize value and keep the end user at the center of every decision.",
+    "sectionProjects_title":"My",
+    "sectionProjects_subtitle":"Projects",
+    "sectionProjects_text":"Here are some of the projects I’ve worked on during my training :",
+    "sectionProjects_listem1":"<strong>Project 1:</strong> An online ticketing system for the Paris 2024 Olympic Games, developed in Asp.NET Core. I designed the user interface and implemented the booking and payment features.",
+    "sectionProjects_listem2":"<strong>Project 2:</strong> A showcase website for a gymnastics teacher, built in Asp.NET Core. I created a responsive and dynamic interface to present the teacher's services and schedule.",
+    "sectionProjects_listem3":"<strong>Project 3:</strong> An interactive Advent calendar, developed in vanilla JavaScript. I designed a playful interface for my daughter.",
+    "sectionContact_title":"Contact",
+    "sectionContact_subtitle":"Me",
+    "sectionContact_text":"If you’d like to get in touch, feel free to reach out via email at"
+}

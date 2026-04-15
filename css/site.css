@@ -1,0 +1,222 @@
+/*bar de navigation*/
+.navbar {
+   font-family: "Just Me Again Down Here";
+   font-size: 2rem;
+   margin-top: 2rem;
+   height: 3rem;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   color: white;
+   background-color: white;
+   border-bottom: 1px solid hsl(243, 100%, 69%);
+   margin: 0.2rem 0 1rem 0;
+   padding: 2rem 0 3rem 0;
+   position: sticky;
+   top: 0;
+}
+
+.navbar__background {
+   width: 100%;
+   height: 4.2rem;
+}
+
+.nav {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.navbar__name {
+   margin-left: 3rem;
+}
+
+.navbar__links {
+   margin-left: 5rem;
+}
+
+.navbar__settings {
+   display: flex;
+}
+
+.navbar__selectLanguage, .dark-mode__button {
+   cursor: pointer;
+   background-color: #6C63FF;
+   color: white;
+   padding: 0.5rem;
+   margin: 1rem;
+   border-left: 2px solid #5f5f69;
+   border-top: 2px solid #5f5f69;
+   border-right: 2px solid #8f8f9d;
+   border-bottom: 2px solid #8f8f9d;
+   border-radius: 10px;
+}
+
+.navbar__dark-mode {
+   display: flex;
+   align-items: center;
+   margin-right: 2rem;   
+}
+
+.dark-mode__button {
+   align-items: center;
+   display: flex;
+}
+
+.dark-mode__radio {
+   cursor: pointer;
+   appearance: none;
+   border-radius: 50%;
+   width: 1.2rem;
+   height: 1.2rem;
+   border: 1px solid white;
+}
+
+.dark-mode__radio:checked {
+   appearance: none;
+   background-color: white;
+}
+
+.navbar__link {
+   color: white;
+   text-decoration: none;
+   margin-right: 1rem;
+}
+
+.burger {
+   display: none;
+   flex-direction: column;
+   cursor: pointer;
+   margin-right: 2rem;
+   position: absolulte;
+   top: 0;
+   right: 0;
+   height: 2.5rem;
+   width: 2.5rem;
+   border-left: 2px solid #5f5f69;
+   border-top: 2px solid #5f5f69;
+   border-right: 2px solid #8f8f9d;
+   border-bottom: 2px solid #8f8f9d;
+   border-radius: 10px;
+   padding-top: 0.2rem;
+}
+
+.burger__line {
+   width: 2rem;
+   height: 3px;
+   background-color: white;
+   margin: 4px auto;
+}
+
+@media screen and (max-width: 946px) {
+   .nav, .navbar__links {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 1rem;
+      background-color:  #6C63FF;
+   }
+   
+   .js-navItems-hidden { 
+      display: none;
+   }
+
+   .navbar__links, .navbar__name {
+      margin-left: 0;
+   }
+   .burger {
+      display: flex;
+      position: absolute;
+      top: 0;
+      right: -20px;   
+      margin-top: 2rem;
+   }
+}
+
+/*partie main*/
+main {
+   font-family: quicksand-300, sans-serif;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   margin-top: 1rem auto 1rem auto;
+   padding-top: 2rem;
+   padding: 4rem;
+   max-width: 100%;
+}
+
+.presentation  {
+   display: flex;
+   flex-direction: column;
+   align-items: space-between;
+   justify-content: center;
+   width: 100%;
+}
+
+.presentation__1, .presentation__2 {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+}
+
+h1, h2, h3, h4 {
+      line-height: 3rem;
+}
+
+h1, h2 {
+   color: hsl(276, 65%, 50%);
+}
+
+h1 {
+   font-size: 3rem;
+}
+
+h2 {
+   font-size: 2.5rem;
+}
+
+h3, h4 {
+   color: hsl(245, 17%, 29%);  
+}
+
+h3 {
+   font-size: 2rem;
+}
+
+h4 {
+   font-size: 1.5rem;
+}
+
+.presentation__image  {
+   max-width: 40%;
+}
+
+.presentation__text, .strengths__text, .projects__text, .contact__text, .projects__item {
+   max-width: 50%;
+   font-size: clamp(1rem, 2vw, 1.5rem);
+}
+
+.presentation__3 {
+   min-width: 95%;
+   text-align: center;
+}
+
+.strengths {
+   display: flex;
+   flex-direction: raw;
+   align-items: center;
+   width: 100%;
+}
+
+.strengths__image {
+   align-self:flex-end;
+   justify-self: center;
+   margin-left: 8rem;
+}
+
+.projects, .contact {
+   width: 100%;
+   padding: 1rem;
+}
+
