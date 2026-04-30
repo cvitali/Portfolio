@@ -1,7 +1,7 @@
 {
     "hero_title1":"Bonjour, je suis",
     "hero_title2":"Corinne VITALI",
-    "hero_subtitle":"Développeuse web full-stack, spécialisée en C#/.NET",
+    "hero_subtitle":"Développeuse full-stack en reconversion professionnelle </br> Spécialisée en C#/.NET",
     "hero_text1":"Pendant des années, j’ai travaillé dans la gestion des ventes, les yeux plongés dans les chiffres, les tableaux et les prévisions. J’aimais la partie analyse et j'adorais chercher des solutions aux problèmes de mes clients, mais au fil du temps, une chose me manquait : la sensation de construire réellement quelque chose. Un jour, j’ai compris que j’avais besoin d’un métier où je pourrais voir le résultat concret de mes efforts, un peu comme un maçon qui voit son mur s’élever brique après brique. C’est ce qui m’a menée au développement web.",
     "hero_text2":"Le front-end m’a immédiatement séduite : partir d’une page blanche, imaginer, façonner, voir un projet prendre vie sous mes yeux. Puis j’ai découvert le back-end, et j’ai adoré cette progression méthodique, presque artisanale, où chaque petite étape contribue à une fonctionnalité complexe et cohérente. Aujourd’hui, je me réalise pleinement dans ce métier où logique, créativité et construction se rencontrent.<br><br>Après avoir suivi une formation en ligne, j’ai obtenu mon titre professionnel de Concepteur‑Développeur de solutions digitales en décembre 2025 et je suis maintenant à la recherche d’un poste de développeuse junior où je pourrai continuer à monter en compétences tout en contribuant à des projets passionnants.",
     "hero_text3":"",
@@ -10,12 +10,12 @@
     "sectionStrengths_text":"Grâce à mon expérience de la relation clients, j'aborde le développement avec une approche résolument axée sur l’utilisateur . <br> Je sais comment analyser un besoin, poser les bonnes questions et transformer des attentes parfois peu claires en solutions concrètes. <br> <br> Habituée à communiquer avec des interlocuteurs variés, je facilite les échanges entre les équipes techniques et non-techniques. <br> Cette sensibilité me permet de concevoir des interfaces intuitives et de faire des choix pertinents pour le projet, tout en gardant l'utilisateur final au cœur de chaque décision.",
     "sectionProjects_title":"Mes",
     "sectionProjects_subtitle":"Projets",
-    "sectionProjects_text":"Voici quelques-uns des projets sur lesquels j'ai travaillé pendant et après ma formation :",
+    "sectionProjects_text":"Voici les principaux projets sur lesquels j'ai travaillé, pendant et après ma formation :",
     "sectionProjects_listem1":"<strong>Projet 1 :</strong> Une billetterie en ligne pour les jeux olympiques de Paris 2024, développée en Asp.NET Core . J'ai conçu l'interface utilisateur et implémenté les fonctionnalités de réservation et de paiement.",
     "sectionProjects_listem2":"<strong>Projet 2 :</strong> Un site vitrine pour un professeur de gymnastique, réalisé en Asp.NET Core . J'ai créé une interface responsive et dynamique pour présenter les services et les horaires du professeur.",
     "sectionProjects_listem3":"<strong>Projet 3 :</strong> Un calendrier de l'Avent interactif, développé en javascript vanilla. J'ai conçu une interface ludique pour ma fille.",
-    "sectionContact_title":"Me",
-    "sectionContact_subtitle":"Contacter",
-    "sectionContact_text":"Si vous souhaitez me contacter, n'hésitez pas à me joindre par email à"
-
+    "sectionContact_title":"Merci",
+    "sectionContact_subtitle":"d'avoir pris le temps de visiter mon site !",
+    "sectionContact_text":"N'hésitez pas à me contacter par email ou via linkedIn pour toute question ou opportunité de collaboration. </br> Je serai ravie d'échanger avec vous !",
+    "project_description1":"Site professionnel pour coach sportif"
 }

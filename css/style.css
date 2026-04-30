@@ -1,3 +1,6 @@
+/*style généraux*/
+
+/*polices*/
 .just-me-again-down-here-regular {
   font-family: "Just Me Again Down Here", cursive;
   font-weight: 400;
@@ -18,22 +21,50 @@
   font-style: normal;
 }
 
-.dark-mode {
-    background-color: black;
-    color: white;
+/*Titres*/
+h1, h2, h3, h4 {
+  margin-bottom: 0.5rem;
+
 }
 
-.dark-mode .navbar {
-    background-color: black;
-    color: white;
-    border-bottom: 1px solid hsl(243, 100%, 69%);
+h4 {
+  margin-bottom: 2rem;
 }
 
-.dark-mode h3, .dark-mode h4 {
-    color: lightgray;
+h1, h2 {
+  color: hsl(276, 65%, 50%);
 }
 
-.color-lilac {
-    background-color: hsl(243, 100%, 69%);
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3, h4 {
+  color: hsl(245, 17%, 29%);  
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+/*couleurs*/
+.bg-primary {
+  background-color: hsl(243, 100%, 69%);
+}
+
+.border-smoky-gray {
+  border-left: 2px solid #5f5f69;
+  border-top: 2px solid #5f5f69;
+  border-right: 2px solid #8f8f9d;
+  border-bottom: 2px solid #8f8f9d;
+  border-radius: 10px;
 }
 

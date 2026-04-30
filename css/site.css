@@ -1,3 +1,4 @@
+
 /*bar de navigation*/
 .navbar {
    font-family: "Just Me Again Down Here";
@@ -14,11 +15,13 @@
    padding: 2rem 0 3rem 0;
    position: sticky;
    top: 0;
+   z-index: 1;
 }
 
 .navbar__background {
    width: 100%;
    height: 4.2rem;
+   background-color: #6C63FF;
 }
 
 .nav {
@@ -29,6 +32,8 @@
 
 .navbar__name {
    margin-left: 3rem;
+   color: white;
+   text-decoration: none;
 }
 
 .navbar__links {
@@ -45,11 +50,6 @@
    color: white;
    padding: 0.5rem;
    margin: 1rem;
-   border-left: 2px solid #5f5f69;
-   border-top: 2px solid #5f5f69;
-   border-right: 2px solid #8f8f9d;
-   border-bottom: 2px solid #8f8f9d;
-   border-radius: 10px;
 }
 
 .navbar__dark-mode {
@@ -69,7 +69,7 @@
    border-radius: 50%;
    width: 1.2rem;
    height: 1.2rem;
-   border: 1px solid white;
+   border: 1px solid #4A43CC;
 }
 
 .dark-mode__radio:checked {
@@ -83,6 +83,10 @@
    margin-right: 1rem;
 }
 
+.navbar__link:hover {
+   text-decoration: underline;
+}
+
 .burger {
    display: none;
    flex-direction: column;
@@ -93,11 +97,6 @@
    right: 0;
    height: 2.5rem;
    width: 2.5rem;
-   border-left: 2px solid #5f5f69;
-   border-top: 2px solid #5f5f69;
-   border-right: 2px solid #8f8f9d;
-   border-bottom: 2px solid #8f8f9d;
-   border-radius: 10px;
    padding-top: 0.2rem;
 }
 
@@ -116,7 +115,7 @@
       padding: 1rem;
       background-color:  #6C63FF;
    }
-   
+
    .js-navItems-hidden { 
       display: none;
    }
@@ -141,9 +140,33 @@ main {
    align-items: center;
    justify-content: center;
    margin-top: 1rem auto 1rem auto;
-   padding-top: 2rem;
-   padding: 4rem;
+   padding: 2rem 3rem;
    max-width: 100%;
+}
+
+@media screen and (min-width: 1200px) {
+   main {
+      max-width: 80%;
+      margin: auto;
+   }   
+}
+
+@media screen and (max-width: 450px) {
+   main {
+      padding: 0;
+   }   
+}
+
+section {
+   width: 100%;
+   margin:3rem;
+}
+
+@media screen and (max-width: 900px) {
+   section {
+      margin: 1rem;
+      max-width: 90vw;
+   }
 }
 
 .presentation  {
@@ -151,49 +174,43 @@ main {
    flex-direction: column;
    align-items: space-between;
    justify-content: center;
-   width: 100%;
 }
 
-.presentation__1, .presentation__2 {
+.presentation__1, .presentation__2, .strengths {
    display: flex;
    flex-direction: row;
    align-items: center;
 }
 
-h1, h2, h3, h4 {
-      line-height: 3rem;
+@media screen and (max-width: 600px) {
+   .presentation__1, .presentation__2, .strengths {
+      flex-direction: column;
+      width: 100%;
+      justify-content: center;
+   }
+
+   .presentation__2 {
+      flex-direction: column-reverse;
+   }
+
+   .presentation__text, .strengths__text, .projects__text, .contact__text {
+      min-width: 100%;
+   }
 }
 
-h1, h2 {
-   color: hsl(276, 65%, 50%);
-}
-
-h1 {
-   font-size: 3rem;
-}
-
-h2 {
-   font-size: 2.5rem;
-}
-
-h3, h4 {
-   color: hsl(245, 17%, 29%);  
-}
-
-h3 {
-   font-size: 2rem;
-}
-
-h4 {
-   font-size: 1.5rem;
-}
-
-.presentation__image  {
-   max-width: 40%;
-}
-
-.presentation__text, .strengths__text, .projects__text, .contact__text, .projects__item {
+.presentation__image {
    max-width: 50%;
+}
+
+.presentation__text {
+   max-width: 50%;
+}
+
+.strengths__text {
+   max-width: 70%;
+}
+
+.presentation__text, .projects__text, .contact__text, .strengths__text  {
    font-size: clamp(1rem, 2vw, 1.5rem);
 }
 
@@ -206,17 +223,58 @@ h4 {
    display: flex;
    flex-direction: raw;
    align-items: center;
-   width: 100%;
 }
 
 .strengths__image {
-   align-self:flex-end;
-   justify-self: center;
-   margin-left: 8rem;
+   max-width: 30%;
+   align-self:first center;
+   margin-left: 2rem;
 }
 
-.projects, .contact {
-   width: 100%;
-   padding: 1rem;
+.contact {
+   padding-bottom: 5rem;
+}
+
+.contact__text {
+  font-size: 1.2rem;
+  margin: 1rem auto;
+}
+
+.contact__methods {
+   display: flex;
+   max-width: 50%;
+}
+
+.contact__link {
+   display: flex;
+}
+
+   .contact__link:hover {
+      animation: shake 0.5s;
+      animation-iteration-count: 1;
+   }
+
+svg {
+   height: 6rem;
+   margin: 2rem;
+}
+
+.js-contactIcon-light {
+   fill: #1E1D26;
+   stroke: #1E1D26;
+} 
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
 
