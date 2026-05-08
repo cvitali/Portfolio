@@ -94,21 +94,6 @@
     font-size: 0.8rem;
 }
 
-.js-js-projectTechno {
-    
-}
-
-
-@media screen and (max-width: 1087px) {
-    .js-projectTechnoImg{
-    height: 2em;
-}    
-}
-
-/*.project__technoImg:hover {
-    transform: translateY(-5px);
-}*/
-
 .project__links {
     margin-right: 0.5rem;
 }
@@ -132,6 +117,10 @@ a >.project__link {
     text-decoration: none;
 }
 
+.project__link .js-hidden {
+    opacity: 0;
+}
+
 .project__linkDemo {
     background: #6C63FF ;
     color: #FFFFFF;
@@ -153,6 +142,23 @@ a >.project__link {
         color: #FFFFFF;
         cursor: pointer;    
     }
+
+.project__linkInfos {
+    background: hsl(32, 100%, 69%);
+    color: #FFFFFF;
+    font-size: 2.5rem;
+}
+
+.project__linkInfos .js-hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+@media (hover: hover) {
+    .project__linkInfos {
+display: none;
+    }
+}
 
 .project__links .hidden {
     opacity: 0;

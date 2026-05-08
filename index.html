@@ -9,18 +9,28 @@
         <link rel="stylesheet" href="../css/site.css">
         <link rel="stylesheet" href="../css/projects.css">
         <link rel="stylesheet" href="../css/darkMode.css">
+        <link rel="stylesheet" href="../css/projectModal.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Just+Me+Again+Down+Here&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <link rel="shortcut icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+        <meta name="apple-mobile-web-app-title" content="Portofolio" />
+        <link rel="manifest" href="/site.webmanifest" />
     </head>
     <body>
         <nav class="navbar">
             <div class="navbar__background bg-primary">
                 <div class="nav">
                     <div >
-                        <a class="navbar__name" href="index.html">Corinne VITALI</a>
+                        <a class="navbar__logo" href="index.html">
+                            <img class="navbar__logoImg" src="../assets/logos/logo3.png" alt="Logo de Corinne Vitali" width="40" height="40">
+                            <p class="navbar__logoTxt">Corinne Vitali</p>
+                        </a>
                     </div>
                     <div class="navbar__links js-navItems js-navItems-hidden ">
                         <a class="navbar__link" href="#">A propos</a>
@@ -54,8 +64,8 @@
                     <div class="presentation__text">
                         <h3 data-i18="hero_title1"></h3>
                         <h1 data-i18="hero_title2"></h1>
-                        <h4 data-i18="hero_subtitle"></h4>
-                        <p data-i18="hero_text1"></p>
+                        <h4 class="presentation__textSubtitle" data-i18="hero_subtitle"></h4>
+                        <p class="justify" data-i18="hero_text1"></p>
                     </div>
                     <div class="presentation__image">
                         <img src="../assets/images/undraw_proud-coder_bivp.png" alt="Dessin d'une développeuse" width="100%" height="100%">
@@ -65,12 +75,11 @@
                         <div class="presentation__image">
                             <img src="../assets/images/coder_1.png" alt="Dessin d'une développeuse" width="100%" height="100%">
                         </div>
-                        <div data-i18="hero_text2" class="presentation__text"></div>
+                        <div data-i18="hero_text2" class="presentation__text justify"></div>
                 </div>                                
-                <div data-i18="hero_text3" class="presentation__text presentation__3"></div>
             </section>
             <section class="strengths">
-                <div class="strengths__text">
+                <div class="strengths__text justify">
                     <h3 data-i18="sectionStrengths_title"></h3>
                     <h2 data-i18="sectionStrengths_subtitle"></h2>
                     <p data-i18="sectionStrengths_text"></p>
@@ -83,11 +92,34 @@
                 <h3 data-i18="sectionProjects_title" id="projectsSection"></h3>
                 <h2 data-i18="sectionProjects_subtitle"></h2>
                 <p data-i18="sectionProjects_text" class="projects__text"></p>
+                <!--fenêtre modale pour les fiches projets-->
+                <dialog id="js-modalProject" class="modalProject">
+                    <div class="modalProject__container">
+                        <button class="modalProject__closeBtn js-closeModal" aria-label="Fermer la fenêtre">X</button>
+                        <img class="modalProject__image js-modalProjectImage" alt="Image du projet">
+                        <h1 class="modalProject__title js-modalProjectTitle"></h1>
+                        <h2 class="modalProject__subtitle js-modalProjectSubtitle"></h2>
+                        <div class="modalProject__stack js-modalProjectStack"></div>
+                        <div class="modalProject__tasks">
+                            <h5 class="modalProject__tasksTitle">Fonctionnalités & aspects techniques :</h5>
+                            <ul class="modalProject__taskList js-modalProjectTask"></ul>
+                        </div> 
+                        <div class="modalProject__objectives">
+                            <h5 class="modalProject__ObjectivesTitle">Objectifs du projet :</h5> 
+                            <p class="modalProject__objectivesText js-modalProjectObjective"></p>
+                        </div>  
+                        <div class="modalProject__infos">
+                            <h5 class="modalProject__infosTitle">Informations complémentaires :</h5> 
+                            <p class="modalProject__infosText js-modalProjectInfos"></p>
+                        </div>  
+                    </div>
+                </dialog>   
+                <!--cartes projets-->
                 <div class="projects__cards">
                     <div class="project__card js-projectCard">
                         <div class="project__imageContainer">
                             <div class="js-project__imageHover js-hidden">
-                                 <a class="project__linkFile" href="./html/ficheProjet.html" target="_blank">
+                                 <a class="project__linkFile" >
                                     +
                                 </a>
                             </div>
@@ -105,13 +137,16 @@
                                 <a class="project__link project__linkSourceCode" href="https://github.com/CorinDesbois/Vitamouv" target="_blank">
                                     GitHub
                                 </a>
+                                <a class="project__link project__linkInfos">
+                                    +
+                                </a>
                             </div>
                         </div>
                     </div>
                     <div class="project__card js-projectCard">
                         <div class="project__imageContainer">
                             <div class="js-project__imageHover js-hidden">
-                                 <a class="project__linkFile" href="./html/ficheProjet.html" target="_blank">
+                                 <a class="project__linkFile" >
                                     +
                                 </a>
                             </div>
@@ -129,13 +164,16 @@
                                 <a class="project__link project__linkSourceCode" href="https://github.com/CorinDesbois/BachelorParis2024" target="_blank">
                                     GitHub
                                 </a>
+                                <a class="project__link project__linkInfos">
+                                    +
+                                </a>
                             </div>
                         </div>
                     </div>
                     <div class="project__card js-projectCard">
                         <div class="project__imageContainer">
                             <div class="js-project__imageHover js-hidden">
-                                 <a class="project__linkFile" href="./html/ficheProjet.html" target="_blank">
+                                 <a class="project__linkFile">
                                     +
                                 </a>
                             </div>
@@ -153,13 +191,16 @@
                                 <a class="project__link project__linkSourceCode" href="https://github.com/CorinDesbois/My-advent-calendar" target="_blank">
                                     GitHub
                                 </a>
+                                <a class="project__link project__linkInfos">
+                                    +
+                                </a>
                             </div>
                         </div>
                     </div>
                     <div class="project__card js-projectCard">
                        <div class="project__imageContainer">
                             <div class="js-project__imageHover js-hidden">
-                                 <a class="project__linkFile" href="./html/ficheProjet.html" target="_blank">
+                                 <a class="project__linkFile">
                                     +
                                 </a>
                             </div>
@@ -177,6 +218,9 @@
                                 <a class="project__link project__linkSourceCode" href="https://github.com/CorinDesbois/Vitamouv" target="_blank">
                                     GitHub
                                 </a>
+                                <a class="project__link project__linkInfos js-hidden">
+                                    +
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -185,7 +229,7 @@
             <section class="contact" id="contactSection">
                 <h2 data-i18="sectionContact_title"></h2>
                 <h3 data-i18="sectionContact_subtitle"></h3> 
-                <p class="contact__text" data-i18="sectionContact_text"></p>
+                <p class="contact__text justify" data-i18="sectionContact_text"></p>
                 <div class="contact__methods">
                     <a class="contact__link" href="mailto: corinne.wilwert@yahoo.fr">
                         <svg xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" viewBox="0 0 298 230" fill="none" version="1.1" id="svg2" sodipodi:docname="7e3dc2d1-c269-4d23-b16e-7883337a65b5.svg">
@@ -209,5 +253,7 @@
           
         </footer>
     </body>
-    <script src="../js/site.js"></script>
+    <!-- Penser à insérer type="module" pour pouvoir utiliser les modules ES6 -->
+    <script type="module" src="../js/script.js"></script>
+    <script src="../js/tools.js"></script>
 </html>

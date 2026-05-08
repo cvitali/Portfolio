@@ -1,3 +1,5 @@
+import projectDetails from './projectDetails.js'
+
 // Sélection du Dark Mode
 const radiobuttons = document.querySelectorAll('.js-dark-mode');
 const projectCards = document.querySelectorAll('.js-projectCard')
@@ -52,7 +54,6 @@ const selectLanguage = document.querySelector('.js-selectLanguage');
 let currentLanguage = loadLanguage('fr'); // langue par défaut
 selectLanguage.addEventListener('click', () => {
     const selectedLanguage = selectLanguage.value;
-    console.log('Selected language:', selectedLanguage);
     loadLanguage(selectedLanguage);
 })
 
@@ -79,13 +80,51 @@ burger.addEventListener('click', () => {
 
 // Affichage du hover sur les projets
 const projectImageContainers = document.querySelectorAll('.project__imageContainer')
+const canHover = window.matchMedia('(hover: hover)').matches;
+const projectInfos = document.querySelectorAll('.project__linkInfos')
 
 projectImageContainers.forEach(container => {
     const imageHover = container.querySelector('.js-project__imageHover');
     container.addEventListener('mouseenter', () => {
-        imageHover.classList.remove('js-hidden');
+        imageHover.classList.remove('js-hidden')
     });
     container.addEventListener('mouseleave', () => {
-        imageHover.classList.add('js-hidden');
+        imageHover.classList.add('js-hidden')
     });
-});
+})
+
+// Ouverture de la fiche projet sur grand écran
+const projectLinks = document.querySelectorAll('.project__linkFile')
+const projectDialog = document.getElementById('js-modalProject')
+
+projectLinks.forEach(link => {
+    link.addEventListener('click', (event) => {
+        event.preventDefault()
+        // Récupération de l'index du projet à afficher à partir du lien cliqué
+        const projectIndex = Array.from(projectLinks).indexOf(link)
+        // Affichage dynamique du contenu de la fiche projet en fonction de l'index
+        const projectData = projectDetails[projectIndex]
+        showDataInModal(projectData.image, projectData.title, projectData.description, projectData.stack, projectData.technologies, projectData.objective, projectData.info)
+
+        projectDialog.showModal()
+    })
+})
+
+//Ouverture de la fiche projet sur petit écran
+const projectsLinksSmall = document.querySelectorAll('.project__linkInfos')
+
+projectsLinksSmall.forEach(link => {
+    link.addEventListener('click', (event) => {
+        event.preventDefault()
+        projectDialog.showModal()
+    })
+})
+
+// Fermeture de la fiche projet
+const closeModalBtn = document.querySelector('.js-closeModal')
+closeModalBtn.addEventListener('click', () => {
+    projectDialog.close()
+})
+
+
+

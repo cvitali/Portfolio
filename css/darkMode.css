@@ -1,0 +1,32 @@
+
+.dark-mode {
+  background-color: #121212;
+  color: white;
+}
+
+.dark-mode .navbar {
+  background-color: #121212;
+}
+
+.dark-mode h3, .dark-mode h4 {
+  color: lightgray;
+}
+
+.js-projectCard-dark  {
+  background-color: #1E1E1E;
+  border: 1px solid #333;
+  color: #8F2CD1;
+}
+
+.js-projectName-dark {
+  color: white;
+}
+
+.js-projectTechno-dark {
+    color: #B896C0;
+}
+
+.js-contactIcon-dark {
+  stroke: #B896C0;
+  fill: #B896C0;
+}

@@ -1,4 +1,5 @@
 
+
 /*bar de navigation*/
 .navbar {
    font-family: "Just Me Again Down Here";
@@ -30,10 +31,30 @@
    align-items: center;
 }
 
-.navbar__name {
-   margin-left: 3rem;
+.navbar__logo {
    color: white;
    text-decoration: none;
+   display: flex;
+   align-items: center;
+}
+
+.navbar__logoImg {
+   margin-left: 3rem;
+   margin-right: 0.5rem;
+}
+
+@media screen and (max-width: 970px) {
+   .navbar__logoImg {
+      margin-left: 1rem;
+   }
+   
+}
+
+@media screen and (max-width: 270px) {
+   .navbar__logoTxt {
+      display: none;
+   }
+   
 }
 
 .navbar__links {
@@ -198,12 +219,27 @@ section {
    }
 }
 
-.presentation__image {
-   max-width: 50%;
+.presentation__image, .strengths__image {
+   max-width: 60%;
+   align-self:first center;
+   margin: 2rem;
+}
+
+@media screen and (min-width: 600px) {
+   .presentation__image {
+      width: 100%;
+      margin: 3dvh;
+   }
+ 
 }
 
 .presentation__text {
    max-width: 50%;
+}
+
+.presentation__textSubtitle {
+   background-color: yelllow;
+   color: hsl(245, 17%, 29%);
 }
 
 .strengths__text {
@@ -214,21 +250,10 @@ section {
    font-size: clamp(1rem, 2vw, 1.5rem);
 }
 
-.presentation__3 {
-   min-width: 95%;
-   text-align: center;
-}
-
 .strengths {
    display: flex;
    flex-direction: raw;
    align-items: center;
-}
-
-.strengths__image {
-   max-width: 30%;
-   align-self:first center;
-   margin-left: 2rem;
 }
 
 .contact {

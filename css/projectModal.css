@@ -1,0 +1,100 @@
+
+.modalProject[open] {
+    min-width: 99%;
+    min-height: 99%;
+    background-color: hsla(0, 2%, 16%, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+}
+
+.modalProject__container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #F7F5FA;
+    border: 2px solid #E3DCEB;
+    position: relative;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+.modalProject__closeBtn{
+    width: 2rem;
+    margin: 3rem;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+
+    background-color: #6C63FF;
+    color: white;
+    border-radius: 10%;
+    position: absolute;
+    top:-2rem;
+    right: -2rem;
+}
+
+    .modalProject__closeBtn:hover {
+        background-color: #4A43CC;
+        cursor: pointer;
+    }
+
+.modalProject__image {
+    height: 20vh;
+    border: 3px solid #E3DCEB;
+    box-shadow: 5px 5px 10px #E3DCEB;
+    margin-bottom: 2rem;
+}
+
+.modalProject__title {
+    font-size: 1.4rem; 
+    font-size: clamp(1rem, 2vw, 1.4rem); 
+    color: #1E1D26;  
+}
+
+.modalProject__subtitle {
+    color: #3F3D56;
+}
+
+.modalProject__subtitle {
+    font-size: clamp(0.8rem, 2vw, 1rem);
+}
+
+.modalProject__stack {
+    display: flex;
+    justify-content:space-around;
+    min-width: 80%;
+    max-width: 100%;
+    list-style: square;
+    list-style-position: inside;
+    border: 2px solid #E3DCEB;
+    margin: 1rem;
+    font-size: clamp(0.7rem, 1vw, 1.5rem);
+    background-color: #4A43CC;
+    color: white;
+}
+
+@media (max-width: 585px) {
+    .modalProject__stack {
+        flex-direction: column;    
+    }
+}
+
+.modalProject__tasks, .modalProject__objectives, .modalProject__infos {
+    width: 90%;
+    margin-top: 2rem ;
+}
+
+.modalProject__taskList {
+    list-style: square;
+    list-style-position: inside;
+}
+
+.modalProject__tasksTitle, .modalProject__ObjectivesTitle, .modalProject__infosTitle {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #6C1FA0;
+}
