@@ -33,7 +33,7 @@
                         </a>
                     </div>
                     <div class="navbar__links js-navItems js-navItems-hidden ">
-                        <a class="navbar__link" href="#">A propos</a>
+                        <a class="navbar__link" href="#about">A propos</a>
                         <a class="navbar__link" href="#projectsSection">Projets</a>
                         <a class="navbar__link" href="#contactSection">Contact</a>
                     </div>
@@ -59,34 +59,28 @@
             </div>
         </nav>
         <main>
-            <section class="presentation">
-                <div class="presentation__1">
-                    <div class="presentation__text">
-                        <h3 data-i18="hero_title1"></h3>
-                        <h1 data-i18="hero_title2"></h1>
-                        <h4 class="presentation__textSubtitle" data-i18="hero_subtitle"></h4>
-                        <p class="justify" data-i18="hero_text1"></p>
+            <section class="presentationSection">
+                <div class="hero">
+                    <div class="hero__text">
+                        <h1 data-i18="hero_title" class="hero__title">Corinne VITALI</h1>
+                        <h4 class="hero__title" data-i18="hero_subtitle"></h4>
+                        
                     </div>
-                    <div class="presentation__image">
+                    <div class="hero__image">
                         <img src="../assets/images/undraw_proud-coder_bivp.png" alt="Dessin d'une développeuse" width="100%" height="100%">
                     </div>
                 </div>
-                <div class="presentation__2">
-                        <div class="presentation__image">
-                            <img src="../assets/images/coder_1.png" alt="Dessin d'une développeuse" width="100%" height="100%">
+                <div class="presentation" id="about">
+                        <div class="presentation__imageContainer">
+                            <img class="presentation__image" src="../assets/images/portrait2.png" alt="Dessin d'une développeuse" width="100%" height="100%">
+                        </div>
+                        <div class="justify presentation__text">
+                            <p data-i18="presentation_text1"></p>
+                            <p data-i18="presentation_text2"></p>
+                            <p data-i18="presentation_text3"></p>
                         </div>
                         <div data-i18="hero_text2" class="presentation__text justify"></div>
                 </div>                                
-            </section>
-            <section class="strengths">
-                <div class="strengths__text justify">
-                    <h3 data-i18="sectionStrengths_title"></h3>
-                    <h2 data-i18="sectionStrengths_subtitle"></h2>
-                    <p data-i18="sectionStrengths_text"></p>
-                </div>
-                <div class="strengths__image">
-                    <img src="../assets/images/customer-centricity.png" alt="Dessin customer-centricity" width="100%" height="100%">
-                </div>
             </section>
             <section class="projects">
                 <h3 data-i18="sectionProjects_title" id="projectsSection"></h3>

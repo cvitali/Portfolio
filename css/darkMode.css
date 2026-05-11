@@ -12,6 +12,10 @@
   color: lightgray;
 }
 
+.dark-mode .presentation {
+  background-color: #1E1E1E;
+}
+
 .js-projectCard-dark  {
   background-color: #1E1E1E;
   border: 1px solid #333;

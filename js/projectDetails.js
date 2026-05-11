@@ -2,7 +2,7 @@ const projectDetails = [
     {   
         "image": "../assets/images/vitamouv.png",
         "title":"Vita'Mouv - Site professionnel pour une éducatrice sportive",
-        "description": "Site web complet incluant la conception UX, le développement font/back et le déploiement",
+        "description": "Site web complet incluant la conception UX, le développement front/back et le déploiement",
         "stack": ["HTML", "CSS", "JavaScript", "AJAX", "SendGrid", "ASP.NET Core", "Render"],
         "technologies": [
             "Analyse des besoins du client (contenu, structure, identité visuelle)",

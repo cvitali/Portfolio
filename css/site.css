@@ -4,7 +4,6 @@
 .navbar {
    font-family: "Just Me Again Down Here";
    font-size: 2rem;
-   margin-top: 2rem;
    height: 3rem;
    display: flex;
    justify-content: space-between;
@@ -13,7 +12,7 @@
    background-color: white;
    border-bottom: 1px solid hsl(243, 100%, 69%);
    margin: 0.2rem 0 1rem 0;
-   padding: 2rem 0 3rem 0;
+   padding: 1rem 0 1rem 0;
    position: sticky;
    top: 0;
    z-index: 1;
@@ -160,15 +159,11 @@ main {
    flex-direction: column;
    align-items: center;
    justify-content: center;
-   margin-top: 1rem auto 1rem auto;
-   padding: 2rem 3rem;
    max-width: 100%;
 }
 
 @media screen and (min-width: 1200px) {
    main {
-      max-width: 80%;
-      margin: auto;
    }   
 }
 
@@ -179,38 +174,59 @@ main {
 }
 
 section {
-   width: 100%;
-   margin:3rem;
+   max-width: 100%;
 }
 
-@media screen and (max-width: 900px) {
-   section {
-      margin: 1rem;
-      max-width: 90vw;
-   }
-}
-
-.presentation  {
+.presentationSection  {
    display: flex;
    flex-direction: column;
    align-items: space-between;
    justify-content: center;
 }
 
-.presentation__1, .presentation__2, .strengths {
+.hero, .presentation {
    display: flex;
    flex-direction: row;
    align-items: center;
 }
 
+.hero, .presentation, .projects {
+   height: 90vh;
+   padding: 2rem 10% 0 10%;  
+}
+
+.presentation {
+      background-color: #F7F5FA;
+}
+
+.hero__text {
+   max-width: 50%;
+}
+
+.hero__title {
+   margin: 1rem;
+}
+
+.hero__image {
+   max-width: 50%;
+}
+
+.presentation__text  {
+   max-width: 100%;
+}
+
+.presentation__imageContainer {
+   max-width: 30%;
+}
+
 @media screen and (max-width: 600px) {
-   .presentation__1, .presentation__2, .strengths {
+   .presentation__1, .presentation, .strengths {
       flex-direction: column;
       width: 100%;
       justify-content: center;
    }
 
-   .presentation__2 {
+   .presentation {
       flex-direction: column-reverse;
    }
 
@@ -231,15 +247,6 @@ section {
       margin: 3dvh;
    }
  
-}
-
-.presentation__text {
-   max-width: 50%;
-}
-
-.presentation__textSubtitle {
-   background-color: yelllow;
-   color: hsl(245, 17%, 29%);
 }
 
 .strengths__text {
