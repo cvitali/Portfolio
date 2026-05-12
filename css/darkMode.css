@@ -1,6 +1,6 @@
 
 .dark-mode {
-  background-color: #121212;
+  background-color: #222020;
   color: white;
 }
 
@@ -31,6 +31,12 @@
 }
 
 .js-contactIcon-dark {
-  stroke: #B896C0;
-  fill: #B896C0;
+  stroke: #6C63FF;
+  fill: #6C63FF;
 }
+
+.js-contactIcon-dark:hover path {
+  stroke: #4A43CC;
+  fill: #4A43CC;
+}
+

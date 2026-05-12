@@ -11,7 +11,7 @@
    color: white;
    background-color: white;
    border-bottom: 1px solid hsl(243, 100%, 69%);
-   margin: 0.2rem 0 1rem 0;
+   margin: 0 0 1rem 0;
    padding: 1rem 0 1rem 0;
    position: sticky;
    top: 0;
@@ -22,12 +22,14 @@
    width: 100%;
    height: 4.2rem;
    background-color: #6C63FF;
+   margin-bottom: 1rem;
 }
 
 .nav {
    display: flex;
    justify-content: space-between;
    align-items: center;
+   margin-bottom: 3rem;
 }
 
 .navbar__logo {
@@ -52,8 +54,7 @@
 @media screen and (max-width: 270px) {
    .navbar__logoTxt {
       display: none;
-   }
-   
+   }  
 }
 
 .navbar__links {
@@ -147,6 +148,7 @@
       display: flex;
       position: absolute;
       top: 0;
+      transform: translateY(-50%);
       right: -20px;   
       margin-top: 2rem;
    }
@@ -162,53 +164,126 @@ main {
    max-width: 100%;
 }
 
-@media screen and (min-width: 1200px) {
-   main {
-   }   
-}
-
-@media screen and (max-width: 450px) {
-   main {
-      padding: 0;
-   }   
-}
-
 section {
    max-width: 100%;
 }
 
-.presentationSection  {
+/*Section Hero*/
+.sectionHero  {
    display: flex;
    flex-direction: column;
    align-items: space-between;
    justify-content: center;
+   height: 90vh;
 }
 
-.hero, .presentation {
+.hero {
    display: flex;
    flex-direction: row;
    align-items: center;
-}
-
-.hero, .presentation, .projects {
-   height: 90vh;
-   padding: 2rem 10% 0 10%;  
-}
-
-.presentation {
-      background-color: #F7F5FA;
+   padding: 0 10% 0 10%;
 }
 
 .hero__text {
    max-width: 50%;
 }
 
-.hero__title {
+h1  {
    margin: 1rem;
+   font: 13rem;
+}
+
+h1 {
+ font-size: clamp(2rem, 4vw + 1rem, 3rem);
+}
+
+.hero__subtitle {
+   font-size: clamp(1.2rem, 2.2vw + 0.6rem, 2.2rem);
+   font-weight: 500; 
+}
+
+h1, .hero__subtitle {
+   text-align: center;
 }
 
 .hero__image {
    max-width: 50%;
+}
+
+.hero__contact {
+   display: flex;
+   align-content:space-evenly;
+   justify-content: center;
+   justify-items:center ;
+   margin-bottom: 3rem;
+}
+
+.hero__contactSvgPath {
+   stroke: hsl(245, 17%, 29%);
+   fill: hsl(245, 17%, 29%);
+}
+
+.hero__contactSvg:hover path {
+   stroke: black;
+   fill: black;
+   background-color: black;
+}
+
+.hero__contactImg {
+   width: 4rem;
+   margin: 0 0.5rem 0 0.5rem;
+}
+
+svg {
+   height: clamp(2rem, 4vw + 1rem, 3rem);
+   margin: 0 0.5rem 0 0.5rem;
+}
+
+@media (max-width: 937px ) {
+   .sectionHero {
+      height: 85vh;
+   }
+   .hero {
+      flex-direction: column;
+      padding:0;
+      margin-top: 3rem;
+      max-height: 80%;
+   }
+   .hero__title, .hero__text {
+      max-width: 100%;
+   }
+   .hero__image {
+      margin-top: 1rem;
+      max-width: 60vw;
+   }
+}
+
+.hero__arrowDown {
+   align-self: center;
+   margin-top: 2rem;
+   animation: moveDown 4s ease-in 2s infinite normal;
+}
+
+@media (max-width: 937px ) {
+   .hero__arrowDown {
+      transform: translateY(-1rem);
+      animation: paused;
+   }
+}
+
+.presentation {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+}
+
+.presentation, .projects {
+   padding: 2rem 10% 0 10%;  
+}
+
+
+.presentation {
+      background-color: #F7F5FA;
 }
 
 .presentation__text  {
@@ -249,18 +324,8 @@ section {
  
 }
 
-.strengths__text {
-   max-width: 70%;
-}
-
-.presentation__text, .projects__text, .contact__text, .strengths__text  {
+.presentation__text, .projects__text, .contact__text {
    font-size: clamp(1rem, 2vw, 1.5rem);
-}
-
-.strengths {
-   display: flex;
-   flex-direction: raw;
-   align-items: center;
 }
 
 .contact {
@@ -286,15 +351,15 @@ section {
       animation-iteration-count: 1;
    }
 
-svg {
-   height: 6rem;
-   margin: 2rem;
-}
-
 .js-contactIcon-light {
    fill: #1E1D26;
    stroke: #1E1D26;
 } 
+
+/*Autres éléments*/
+.arrowDown {
+   
+}
 
 @keyframes shake {
   0% { transform: translate(1px, 1px) rotate(0deg); }
@@ -310,3 +375,13 @@ svg {
   100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
 
+@keyframes moveDown {
+   0% { transform: translateY(0); }
+   10% { transform: translateY(1rem); }
+   20% { transform: translateY(2rem); }
+   30% { transform: translateY(3rem); }
+   40% { transform: translateY(4rem); }
+   50% { transform: translateY(4rem); }
+   75% { transform: translateY(4rem); }
+   100% { transform: translateY(4rem); }
+}
