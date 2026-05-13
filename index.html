@@ -14,6 +14,9 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Just+Me+Again+Down+Here&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
         <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -29,7 +32,7 @@
                     <div >
                         <a class="navbar__logo" href="index.html">
                             <img class="navbar__logoImg" src="../assets/logos/logo3.png" alt="Logo de Corinne Vitali" width="40" height="40">
-                            <p class="navbar__logoTxt">Corinne Vitali</p>
+                            <p class="navbar__logoTxt just-me-again-down-here-regular ">Corinne Vitali</p>
                         </a>
                     </div>
                     <div class="navbar__links js-navItems js-navItems-hidden ">
@@ -63,7 +66,7 @@
                 <div class="hero">
                     <div class="hero__text">
                         <h1 data-i18="hero_title" class="hero__title">Corinne VITALI</h1>
-                        <h4 class="hero__subtitle" data-i18="hero_subtitle"></h4>  
+                        <h2 class="hero__subtitle" data-i18="hero_subtitle"></h2>  
                         <div class="hero__contact">
                             <a class="hero__contactLink" href="mailto: corinne.wilwert@yahoo.fr">
                                 <svg class="js-svgContact hero__contactSvg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" viewBox="0 0 298 230" fill="none" version="1.1" id="svg2" sodipodi:docname="7e3dc2d1-c269-4d23-b16e-7883337a65b5.svg">
@@ -90,22 +93,22 @@
                         <img src="./assets/logos/arrowDown.png">
                 </div>
             </section>
-            <section>
-                <div class="presentation" id="about">
-                        <div class="presentation__imageContainer">
-                            <img class="presentation__image" src="../assets/images/portrait2.png" alt="Dessin d'une développeuse" width="100%" height="100%">
-                        </div>
-                        <div class="justify presentation__text">
-                            <p data-i18="presentation_text1"></p>
-                            <p data-i18="presentation_text2"></p>
-                            <p data-i18="presentation_text3"></p>
-                        </div>
-                        <div data-i18="hero_text2" class="presentation__text justify"></div>    
-                    </div> 
-            </section>  
+            <section class="sectionAbout">
+                <h3>Qui suis-je ?</h3>
+                <div class="about" id="about">
+                    <div class="about__decorationSmaller"></div>
+                    <img class="about__image" src="../assets/images/portrait2.png" alt="photo portrait">
+                    <div class="justify about__text">
+                        <p clas="about__textP" data-i18="presentation_text1"></p>
+                        <p clas="about__textP" data-i18="presentation_text2"></p>
+                        <p clas="about__textP" data-i18="presentation_text3"></p>
+                    </div>
+                </div>
+                <div class="about__decorationBig color-gradient"></div>
+                <div class="about__decorationSmall"></div>
+            </section>
             <section class="projects">
                 <h3 data-i18="sectionProjects_title" id="projectsSection"></h3>
-                <h2 data-i18="sectionProjects_subtitle"></h2>
                 <p data-i18="sectionProjects_text" class="projects__text"></p>
                 <!--fenêtre modale pour les fiches projets-->
                 <dialog id="js-modalProject" class="modalProject">
@@ -241,9 +244,33 @@
                     </div>
                 </div>
             </section>
+            <section class="skillsSection">
+                        <h3>Mes compétences</h3>
+                        <ul>
+                            <li class="skills skills__front">
+                                <h4>FRONT-END</h4>
+                                <ul class="skill_list">
+                                    <li class="skill_listItem">HTML</li>
+                                    <li class="skill_listItem">CSS</li>
+                                    <li class="skill_listItem">Javascript Vanilla</li>
+                                </ul>
+                            </li>
+                            <li class="skills skills__back">
+                                BACK-END
+                            </li>
+                            <li class="skills outils">
+                                OUTILS
+                            </li>
+                            <li class="skills method">
+                                METHODE
+                            </li>
+                        </ul>
+ 
+            </section>
             <section class="contact" id="contactSection">
                 <h2 data-i18="sectionContact_title"></h2>
                 <h3 data-i18="sectionContact_subtitle"></h3> 
+                
                 <p class="contact__text justify" data-i18="sectionContact_text"></p>
                 <div class="contact__methods">
                     <a class="contact__link" href="mailto: corinne.wilwert@yahoo.fr">

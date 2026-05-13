@@ -23,33 +23,49 @@
   font-style: normal;
 }
 
+
+.poppins-black {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+
 /*Titres*/
 h1, h2, h3, h4 {
   margin-bottom: 0.5rem;
-
+  text-align: center;
 }
 
 h4 {
   margin-bottom: 2rem;
 }
 
-h1, h2 {
-  color: hsl(276, 65%, 50%);
+h1 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 900;
+  font-size: 3.2rem;
+  background: linear-gradient(-90deg, #6C63FF, #8F2CD1);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: -1px;
 }
 
 h2 {
   font-size: 2.5rem;
-}
-
-h3, h4 {
-  color: hsl(245, 17%, 29%);  
+  color: hsl(245, 17%, 29%)
 }
 
 h3 {
   font-size: 2rem;
+  color: #4A43CC;
+  margin-bottom: 1.2rem;
+  font-weight: bolder;
 }
 
 h4 {
+  color: hsl(245, 17%, 29%);  
   font-size: 1.5rem;
 }
 
@@ -64,5 +80,9 @@ h4 {
   border-right: 2px solid #8f8f9d;
   border-bottom: 2px solid #8f8f9d;
   border-radius: 10px;
+}
+
+.color-gradient {
+  background: linear-gradient(-90deg, #6C63FF, #8F2CD1);
 }
 
