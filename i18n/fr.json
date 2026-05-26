@@ -4,12 +4,12 @@
     "presentation_text2":"<br>Le front-end m’a immédiatement séduite par sa dimension visuelle et la liberté de créer à partir d’une page blanche. <br> Quant au back-end, j’apprécie cette progression méthodique où chaque étape contribue à une fonctionnalité cohérente et complète. <br> <br> Formée en ligne, j’ai obtenu mon titre professionnel de Concepteur‑Développeur de solutions digitales en 2025. Aujourd’hui, je recherche un poste de développeuse junior pour continuer à progresser et contribuer à des projets concrets.",
     "presentation_text3":"<br> Mon expérience de la relation client me permet d’analyser les besoins, de clarifier les attentes et de faciliter les échanges entre les équipes, afin de concevoir des interfaces intuitives et centrées utilisateur.",
     "sectionProjects_title":"Mes réalisations",
-    "sectionProjects_text":"Voici les principaux projets sur lesquels j'ai travaillé, pendant et après ma formation :",
+    "sectionProjects_text":"Voici une sélection de projets, réalisés pendant et après ma formation :",
     "sectionProjects_listem1":"<strong>Projet 1 :</strong> Une billetterie en ligne pour les jeux olympiques de Paris 2024, développée en Asp.NET Core . J'ai conçu l'interface utilisateur et implémenté les fonctionnalités de réservation et de paiement.",
     "sectionProjects_listem2":"<strong>Projet 2 :</strong> Un site vitrine pour un professeur de gymnastique, réalisé en Asp.NET Core . J'ai créé une interface responsive et dynamique pour présenter les services et les horaires du professeur.",
     "sectionProjects_listem3":"<strong>Projet 3 :</strong> Un calendrier de l'Avent interactif, développé en javascript vanilla. J'ai conçu une interface ludique pour ma fille.",
-    "sectionContact_title":"Merci",
-    "sectionContact_subtitle":"d'avoir pris le temps de visiter mon site !",
+    "sectionContact_title":"Merci!",
+    "sectionContact_subtitle":"Merci d'avoir pris le temps de visiter mon site !",
     "sectionContact_text":"N'hésitez pas à me contacter par email ou via linkedIn pour toute question ou opportunité de collaboration. </br> Je serai ravie d'échanger avec vous !",
     "project_description1":"Site professionnel pour coach sportif"
 }

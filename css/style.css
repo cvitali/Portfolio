@@ -9,6 +9,13 @@
   font-style: normal;
 }
 
+.rock-salt-regular {
+  font-family: "Rock Salt", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
 .quicksand-300 {
   font-family: "Quicksand", sans-serif;
   font-optical-sizing: auto;
@@ -23,13 +30,11 @@
   font-style: normal;
 }
 
-
 .poppins-black {
   font-family: "Poppins", sans-serif;
   font-weight: 900;
   font-style: normal;
 }
-
 
 /*Titres*/
 h1, h2, h3, h4 {
@@ -45,11 +50,6 @@ h1 {
   font-family: 'Poppins', sans-serif;
   font-weight: 900;
   font-size: 3.2rem;
-  background: linear-gradient(-90deg, #6C63FF, #8F2CD1);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  letter-spacing: -1px;
 }
 
 h2 {
@@ -86,3 +86,10 @@ h4 {
   background: linear-gradient(-90deg, #6C63FF, #8F2CD1);
 }
 
+.text-gradient {
+  background: linear-gradient(-90deg, #6C63FF, #8F2CD1);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: -1px;
+}

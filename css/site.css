@@ -359,27 +359,56 @@ svg {
 
 /*section skills*/
 .skillsSection {
-
+   background-color: #F7F5FA;
+   background-size: contain;
+   width: 100%;
+   padding-top: 2rem;
+   border-top: 1px solid #F7F5FA;
+   border-bottom: 1px solid #F7F5FA;
 }
 
 .skill_list {
    background-color: #4A43CC;
-   color: white;
+   color:white;
    border-radius: 10px;
+   min-height: 3vh;
+   display: flex;
+   align-content: center;
+   align-items: center;
+   justify-content: center;
+   justify-items: center;
+   font-size: clamp(0.7rem, 1vw, 1rem);
 }
 
-.projects__text, .contact__text {
+.skill_listItem {
+   padding: 0 1rem 0 1rem;
+}
+
+@media (max-width: 680px) {
+   .skills {
+      padding: 2rem 0.5rem;
+   }
+}
+
+@media (max-width: 476px) {
+   .skill_list {
+   flex-direction: column;
+   background-color: white;
+   border: 5px double #E3DCEB;
+   color: #3F3D56;
+   font-weight: bolder;
+   }
+   .skill_listItem {
+      padding: 0.5rem 0 0.5rem 0;
+   }
+}
+
+.projects__text, .contact__text{
    font-size: clamp(1rem, 2vw, 1.5rem);
 }
 
-.contact {
-   padding-bottom: 5rem;
-}
+/*Section contact*/
 
-.contact__text {
-  font-size: 1.2rem;
-  margin: 1rem auto;
-}
 
 .contact__methods {
    display: flex;
@@ -400,11 +429,36 @@ svg {
    stroke: #1E1D26;
 } 
 
-/*Autres éléments*/
-.arrowDown {
-   
+.contactSection {
+   display: flex;
+   flex-direction: column;
+   justify-items: center;
+   align-items: center;
 }
 
+.sectionContact_title {
+   margin-top: 2rem;
+   padding: 2rem;
+}
+
+.contact__text {
+   text-align: center;
+   font-size: 1.2rem;
+   margin: 1rem auto;
+}
+
+/*Footer*/
+.footer {
+   font-size: 0.8rem;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-top: 3rem;
+   border-top: 1px solid #E3DCEB;
+   color:hsl(245, 17%, 29%)
+}
+
+/*Animations*/
 @keyframes shake {
   0% { transform: translate(1px, 1px) rotate(0deg); }
   10% { transform: translate(-1px, -2px) rotate(-1deg); }

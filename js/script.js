@@ -79,7 +79,7 @@ burger.addEventListener('click', () => {
 })
 
 // Affichage du hover sur les projets
-const projectImageContainers = document.querySelectorAll('.project__imageContainer')
+const projectImageContainers = document.querySelectorAll('.js-projectCard')
 const canHover = window.matchMedia('(hover: hover)').matches;
 const projectInfos = document.querySelectorAll('.project__linkInfos')
 
@@ -94,7 +94,7 @@ projectImageContainers.forEach(container => {
 })
 
 // Ouverture de la fiche projet sur grand écran
-const projectLinks = document.querySelectorAll('.project__linkFile')
+const projectLinks = document.querySelectorAll('.js-project__linkFile')
 const projectDialog = document.getElementById('js-modalProject')
 
 projectLinks.forEach(link => {

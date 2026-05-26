@@ -15,9 +15,12 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Just+Me+Again+Down+Here&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
         <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
         <link rel="shortcut icon" href="/favicon.ico" />
@@ -65,7 +68,7 @@
             <section class="sectionHero">
                 <div class="hero">
                     <div class="hero__text">
-                        <h1 data-i18="hero_title" class="hero__title">Corinne VITALI</h1>
+                        <h1 data-i18="hero_title" class="hero__title text-gradient">Corinne VITALI</h1>
                         <h2 class="hero__subtitle" data-i18="hero_subtitle"></h2>  
                         <div class="hero__contact">
                             <a class="hero__contactLink" href="mailto: corinne.wilwert@yahoo.fr">
@@ -115,8 +118,8 @@
                     <div class="modalProject__container">
                         <button class="modalProject__closeBtn js-closeModal" aria-label="Fermer la fenêtre">X</button>
                         <img class="modalProject__image js-modalProjectImage" alt="Image du projet">
-                        <h1 class="modalProject__title js-modalProjectTitle"></h1>
-                        <h2 class="modalProject__subtitle js-modalProjectSubtitle"></h2>
+                        <h2 class="modalProject__title js-modalProjectTitle"></h2>
+                        <h3 class="modalProject__subtitle js-modalProjectSubtitle"></h3>
                         <div class="modalProject__stack js-modalProjectStack"></div>
                         <div class="modalProject__tasks">
                             <h5 class="modalProject__tasksTitle">Fonctionnalités & aspects techniques :</h5>
@@ -137,36 +140,48 @@
                     <div class="project__card js-projectCard">
                         <div class="project__imageContainer">
                             <div class="js-project__imageHover js-hidden">
-                                 <a class="project__linkFile" >
-                                    +
-                                </a>
+                                <div class="project__links project__linksHover ">
+                                    <a  class="project__link " href="https://vitamouv.fr" target="_blank">
+                                    Site Web  
+                                    </a>    
+                                    <a class="project__link " href="https://github.com/CorinDesbois/Vitamouv" target="_blank">
+                                        GitHub
+                                    </a>
+                                </div>
                             </div>
                             <img class="project__image" src="./assets/images/vitamouv.png" alt="Vita'Mouv - site web">
                         </div>
                         <div class="project__cardFooter">
                             <div class="project__description">
-                                <h5 class="project__name js-projectName js-projectName-light">Site Vitrine avec formulaire de contact.</h5>
+                                <h5 class="project__name js-projectName js-projectName-light">Site Vitrine</h5>
                                 <p class="js-projectTechno">Asp.NET Core - C# - JavaScript - HTML - CSS</p>
+                                <a class="project__link project__linkFile js-project__linkFile">
+                                       Voir la fiche projet détaillée
+                                </a>  
                             </div>
-                            <div class="project__links ">
-                                <a  class="project__link project__linkDemo" href="https://vitamouv.fr" target="_blank">
-                                   Site Web  
-                                </a>    
-                                <a class="project__link project__linkSourceCode" href="https://github.com/CorinDesbois/Vitamouv" target="_blank">
-                                    GitHub
-                                </a>
-                                <a class="project__link project__linkInfos">
-                                    +
-                                </a>
+                            <div class="project__links project__linksNoHover">
+                                    <a  class="project__link " href="https://vitamouv.fr" target="_blank">
+                                        Site Web
+                                    </a>   
+                                    <a class="project__link " href="https://github.com/CorinDesbois/Vitamouv" target="_blank">
+                                        GitHub
+                                    </a>
                             </div>
+                            
+                           
                         </div>
                     </div>
                     <div class="project__card js-projectCard">
                         <div class="project__imageContainer">
                             <div class="js-project__imageHover js-hidden">
-                                 <a class="project__linkFile" >
-                                    +
+                                <div class="project__links project__linksHover ">
+                                <a  class="project__link " href="https://ma-billetterie.onrender.com/" target="_blank">
+                                    Live Demo    
+                                </a>    
+                                <a class="project__link " href="https://github.com/CorinDesbois/BachelorParis2024" target="_blank">
+                                    GitHub
                                 </a>
+                            </div>
                             </div>
                             <img class="project__image" src="./assets/images/billetterie.png" alt="Billetterie - site web">
                         </div>
@@ -174,26 +189,31 @@
                             <div class="project__description">
                                 <h5 class="project__name js-projectName js-projectName-light">Billetterie en ligne - Appli web</h5>
                                 <p class="js-projectTechno">Asp.NET Core - C# - JavaScript - HTML - CSS</p>
+                                <a class="project__link project__linkFile js-project__linkFile">
+                                    Voir la fiche projet détaillée
+                                </a>
                             </div>
-                            <div class="project__links ">
-                                <a  class="project__link project__linkDemo" href="https://ma-billetterie.onrender.com/" target="_blank">
-                                    Live Demo    
-                                </a>    
-                                <a class="project__link project__linkSourceCode" href="https://github.com/CorinDesbois/BachelorParis2024" target="_blank">
-                                    GitHub
-                                </a>
-                                <a class="project__link project__linkInfos">
-                                    +
-                                </a>
+                            <div class="project__links project__linksNoHover">
+                                    <a  class="project__link " href="https://ma-billetterie.onrender.com/" target="_blank">
+                                        Site    
+                                    </a>   
+                                    <a class="project__link " href="https://github.com/CorinDesbois/BachelorParis2024" target="_blank">
+                                        GitHub
+                                    </a>
                             </div>
                         </div>
                     </div>
                     <div class="project__card js-projectCard">
                         <div class="project__imageContainer">
                             <div class="js-project__imageHover js-hidden">
-                                 <a class="project__linkFile">
-                                    +
+                                <div class="project__links project__linksHover">
+                                <a  class="project__link " href="https://myadventcalendar.netlify.app/" target="_blank">
+                                    Live Demo    
+                                </a>    
+                                <a class="project__link " href="https://github.com/CorinDesbois/My-advent-calendar" target="_blank">
+                                    GitHub
                                 </a>
+                            </div>
                             </div>
                             <img class="project__image" src="./assets/images/calendrier.png" alt="Calendrier de l'Avent en ligne - site web">
                         </div>
@@ -201,26 +221,31 @@
                             <div class="project__description">
                                 <h5 class="project__name js-projectName js-projectName-light">Calendrier de l'Avent interactif</h5>
                                 <p class="js-projectTechno">JavaScript - HTML - SASS</p>
+                                <a class="project__link project__linkFile js-project__linkFile">
+                                    Voir la fiche projet détaillée
+                                </a>
                             </div>
-                            <div class="project__links ">
-                                <a  class="project__link project__linkDemo" href="https://myadventcalendar.netlify.app/" target="_blank">
-                                    Live Demo    
-                                </a>    
-                                <a class="project__link project__linkSourceCode" href="https://github.com/CorinDesbois/My-advent-calendar" target="_blank">
-                                    GitHub
-                                </a>
-                                <a class="project__link project__linkInfos">
-                                    +
-                                </a>
+                            <div class="project__links project__linksNoHover">
+                                    <a  class="project__link " href="https://myadventcalendar.netlify.app/" target="_blank">
+                                        Site    
+                                    </a>   
+                                    <a class="project__link " href="https://github.com/CorinDesbois/My-advent-calendar" target="_blank">
+                                        GitHub
+                                    </a>
                             </div>
                         </div>
                     </div>
                     <div class="project__card js-projectCard">
                        <div class="project__imageContainer">
                             <div class="js-project__imageHover js-hidden">
-                                 <a class="project__linkFile">
-                                    +
-                                </a>
+                                <div class="project__links project__linksHover">
+                                    <a  class="project__link  hidden">
+                                        Site    
+                                    </a>   
+                                    <a class="project__link " href="https://github.com/CorinDesbois/Vitamouv" target="_blank">
+                                        GitHub
+                                    </a>
+                                </div>
                             </div>
                             <img class="project__image" src="./assets/images/systSol.png" alt="Système solaire">
                         </div>
@@ -228,17 +253,14 @@
                            <div class="project__description">
                                 <h5 class="project__name js-projectName js-projectName-light">Système solaire animé</h5>
                                 <p class="js-projectTechno">JavaScript - HTML - SASS</p>
+                                 <a class="project__link project__linkFile js-project__linkFile">
+                                    Voir la fiche projet détaillée
+                                </a>
                             </div>
-                            <div class="project__links ">
-                                <a  class="project__link project__linkDemo hidden" href="https://myadventcalendar.netlify.app/" target="_blank">
-                                    Site    
-                                </a>   
-                                <a class="project__link project__linkSourceCode" href="https://github.com/CorinDesbois/Vitamouv" target="_blank">
-                                    GitHub
-                                </a>
-                                <a class="project__link project__linkInfos js-hidden">
-                                    +
-                                </a>
+                            <div class="project__links project__linksNoHover">  
+                                    <a class="project__link " href="https://github.com/CorinDesbois/Vitamouv" target="_blank">
+                                        GitHub
+                                    </a>
                             </div>
                         </div>
                     </div>
@@ -250,28 +272,43 @@
                             <li class="skills skills__front">
                                 <h4>FRONT-END</h4>
                                 <ul class="skill_list">
-                                    <li class="skill_listItem">HTML</li>
-                                    <li class="skill_listItem">CSS</li>
-                                    <li class="skill_listItem">Javascript Vanilla</li>
+                                    <li class="skill_listItem">HTML5</li>
+                                    <li class="skill_listItem">CSS3 (responsive, animations)</li>
+                                    <li class="skill_listItem">Sass</li>
+                                    <li class="skill_listItem">Javascript</li>
+                                    <li class="skill_listItem">Razor</li>
                                 </ul>
                             </li>
                             <li class="skills skills__back">
-                                BACK-END
+                                <h4>BACK-END</h4>
+                                 <ul class="skill_list">
+                                    <li class="skill_listItem">C#</li>
+                                    <li class="skill_listItem">ASP.NET Core</li>
+                                    <li class="skill_listItem">Entity Framework Core</li>
+                                    <li class="skill_listItem">Identity</li>
+                                    <li class="skill_listItem">SQL Server</li>
+                                    <li class="skill_listItem">PostgreSQL</li>
+                                 </ul>
                             </li>
                             <li class="skills outils">
-                                OUTILS
-                            </li>
-                            <li class="skills method">
-                                METHODE
+                                <h4>OUTILS ET WORKFLOWS</h4>
+                                <ul class="skill_list">
+                                    <li class="skill_listItem">Git/GitHub</li>
+                                    <li class="skill_listItem">GitHub Actions</li>
+                                    <li class="skill_listItem">CI/CD</li>
+                                    <li class="skill_listItem">Visual Studio</li>
+                                    <li class="skill_listItem">VS Code</li>
+                                    <li class="skill_listItem">Figma</li>
+                                    <li class="skill_listItem">Trello</li>
+                                </ul>
                             </li>
                         </ul>
  
             </section>
-            <section class="contact" id="contactSection">
-                <h2 data-i18="sectionContact_title"></h2>
+            <section class="contactSection" id="contactSection">
+                <h2 data-i18="sectionContact_title" class="sectionContact_title rock-salt-regular text-gradient"></h2>
                 <h3 data-i18="sectionContact_subtitle"></h3> 
-                
-                <p class="contact__text justify" data-i18="sectionContact_text"></p>
+                <p class="contact__text" data-i18="sectionContact_text"></p>
                 <div class="contact__methods">
                     <a class="contact__link" href="mailto: corinne.wilwert@yahoo.fr">
                         <svg xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" viewBox="0 0 298 230" fill="none" version="1.1" id="svg2" sodipodi:docname="7e3dc2d1-c269-4d23-b16e-7883337a65b5.svg">
@@ -291,8 +328,9 @@
             </section>
         </main>
         <footer class="footer">
-            <p>&copy; 2024 Corinne Vitali. Tous droits réservés.</p>
-            <p><a target="_blank" href="https://icons8.com/icon/48464/chevron-down">Chevron bas</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a></p>
+            <p>&copy; 2026 Corinne Vitali. Tous droits réservés.</p>
+            <p>Icons by <a target="_blank" href="https://icons8.com">Icons8</a></p>
+            <p>Hero image by <a target="_blank" href="https://undraw.co">Undraw</a></p>
           
         </footer>
     </body>
