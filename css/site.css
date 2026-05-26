@@ -378,6 +378,8 @@ svg {
    justify-content: center;
    justify-items: center;
    font-size: clamp(0.7rem, 1vw, 1rem);
+   font-weight: bolder;
+
 }
 
 .skill_listItem {
@@ -393,10 +395,7 @@ svg {
 @media (max-width: 476px) {
    .skill_list {
    flex-direction: column;
-   background-color: white;
-   border: 5px double #E3DCEB;
-   color: #3F3D56;
-   font-weight: bolder;
+   border: 10px double #E3DCEB;
    }
    .skill_listItem {
       padding: 0.5rem 0 0.5rem 0;
