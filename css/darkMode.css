@@ -20,6 +20,18 @@
   color: #7A72FF;
 }
 
+/*section hero*/
+.dark-mode .hero__contactSvgPath {
+   stroke: lightgray;
+   fill: lightgray;
+}
+
+.dark-mode .hero__contactSvg:hover path {
+   stroke: whitesmoke;
+   fill: white;
+   background-color: black;
+}
+
 /*section about*/
 .dark-mode .about__decorationSmall {
   background-color: hsla(243, 100%, 72%, 0.5);
@@ -48,14 +60,9 @@
   background-color: #7A72FF;
 }
 
-.js-contactIcon-dark {
-  stroke: #6C63FF;
-  fill: #6C63FF;
-}
-
-.js-contactIcon-dark:hover path {
-  stroke: #4A43CC;
-  fill: #4A43CC;
+.dark-mode .contactSvg path {
+  stroke: lightgray;
+  fill: lightgray;
 }
 
 /*footer*/

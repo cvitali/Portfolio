@@ -39,13 +39,23 @@
    align-items: center;
 }
 
-.navbar__logoImg {
+.navbar__logoInitiales {
    margin-left: 3rem;
    margin-right: 0.5rem;
+   font-family: 'Titillium Web', sans-serif;
+   font-weight: 600;
+   font-size: 1.5rem;
+   border: 1px solid white;
+   border-radius: 100px;
+   aspect-ratio: 1;
+   text-align: center;
+   display: flex;
+   align-items: center;
+   padding: 0.2rem;
 }
 
 @media screen and (max-width: 970px) {
-   .navbar__logoImg {
+   .navbar__logoInitiales {
       margin-left: 1rem;
    }
    
@@ -417,11 +427,6 @@ svg {
       animation: shake 0.5s;
       animation-iteration-count: 1;
    }
-
-.js-contactIcon-light {
-   fill: #1E1D26;
-   stroke: #1E1D26;
-} 
 
 .contactSection {
    display: flex;
