@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="../css/site.css">
         <link rel="stylesheet" href="../css/projects.css">
         <link rel="stylesheet" href="../css/darkMode.css">
-        <link rel="stylesheet" href="../css/projectModal.css">
+        <link rel="stylesheet" href="../css/modales.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -41,7 +41,7 @@
                     <div class="navbar__links js-navItems js-navItems-hidden ">
                         <a class="navbar__link" href="#about">A propos</a>
                         <a class="navbar__link" href="#projectsSection">Projets</a>
-                        <a class="navbar__link" href="#contactSection">Contact</a>
+                        <a class="navbar__link js-contactBtn" href="#contactSection">Contact</a>
                     </div>
                     <div class="navbar__settings js-navItems js-navItems-hidden">
                         <select class="navbar__selectLanguage js-selectLanguage border-smoky-gray" name="language" id="language">
@@ -71,7 +71,7 @@
                         <h1 data-i18="hero_title" class="hero__title text-gradient">Corinne VITALI</h1>
                         <h2 class="hero__subtitle" data-i18="hero_subtitle"></h2>  
                         <div class="hero__contact">
-                            <a class="hero__contactLink" href="mailto: corinne.wilwert@yahoo.fr">
+                            <a class="hero__contactLink js-contactBtn" href="#">
                                 <svg class="js-svgContact hero__contactSvg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" viewBox="0 0 298 230" fill="none" version="1.1" id="svg2" sodipodi:docname="7e3dc2d1-c269-4d23-b16e-7883337a65b5.svg">
                                     <defs id="defs2"/>
                                     <sodipodi:namedview id="namedview2" pagecolor="#ffffff" bordercolor="#000000" borderopacity="0.25" inkscape:showpageshadow="2" inkscape:pageopacity="0.0" inkscape:pagecheckerboard="0" inkscape:deskcolor="#d1d1d1"/>
@@ -80,7 +80,7 @@
                                 </svg> 
                          
                             </a> 
-                            <a class="hero__contactlink" href= "#">
+                            <a class="hero__contactlink js-contactBtn" href= "#">
                                 <svg class="js-svgContact hero__contactSvg" xmlns="http://www.w3.org/ 2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" viewBox="0 0 382 382" xml:space="preserve">
                                     <path class="js-svgContact hero__contactSvgPath" d="M347.445,0H34.555C15.471,0,0,15.471,0,34.555v312.889C0,366.529,15.471,382,34.555,382h312.889  C366.529,382,382,366.529,382,347.444V34.555C382,15.471,366.529,0,347.445,0z M118.207,329.844c0,5.554-4.502,10.056-10.056,10.056  H65.345c-5.554,0-10.056-4.502-10.056-10.056V150.403c0-5.554,4.502-10.056,10.056-10.056h42.806  c5.554,0,10.056,4.502,10.056,10.056V329.844z M86.748,123.432c-22.459,0-40.666-18.207-40.666-40.666S64.289,42.1,86.748,42.1  s40.666,18.207,40.666,40.666S109.208,123.432,86.748,123.432z M341.91,330.654c0,5.106-4.14,9.246-9.246,9.246H286.73  c-5.106,0-9.246-4.14-9.246-9.246v-84.168c0-12.556,3.683-55.021-32.813-55.021c-28.309,0-34.051,29.066-35.204,42.11v97.079  c0,5.106-4.139,9.246-9.246,9.246h-44.426c-5.106,0-9.246-4.14-9.246-9.246V149.593c0-5.106,4.14-9.246,9.246-9.246h44.426  c5.106,0,9.246,4.14,9.246,9.246v15.655c10.497-15.753,26.097-27.912,59.312-27.912c73.552,0,73.131,68.716,73.131,106.472  L341.91,330.654L341.91,330.654z" fill="#1E1D26" stroke="#1E1D26"/>
                                 </svg>
@@ -113,6 +113,35 @@
             <section class="projects">
                 <h3 data-i18="sectionProjects_title" id="projectsSection"></h3>
                 <p data-i18="sectionProjects_text" class="projects__text"></p>
+                <!--fenêtre modale pour le formulaire de contact-->
+                <dialog id="js-modalContact" class="modalContact">
+                    <div class="modalContact__container">
+                        <button class="modalContact__closeBtn js-closeContact" aria-label="Fermer la fenêtre">X</button>
+                        <h2 class="modalContact__title">Contactez-moi</h2>
+                        <form class="modalContact__form" id="contactForm">
+                            <div class="form__group modalContact__groupName">
+                                <label class="groupNameLabel groupNameLabel__lastname" for="lastname">Nom :
+                                    <input type="text" id="lastname" name="lastname" required>
+                                </label>
+                                <label class="groupNameLabel groupNameLabel__firstname" for="firstname">Prénom :
+                                    <input type="text" id="firstname" name="firstname" required>
+                                </label>
+                            </div>
+                            <div class="form__group modalContact__groupEmail">
+                                <label for="email">Email :</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form__group modalContact__groupMessage">
+                                <label for="subject">Sujet :</label>
+                                <input type="text" id="subject" name="subject" required>
+                                <label for="message">Message :</label>
+                                <textarea id="message" name="message" required></textarea>
+                            </div>
+                            <button type="submit" class="form__submit">Envoyer</button>
+                            <p class="contactFormInfo">« Les informations saisies sont utilisées uniquement pour répondre à votre message. »</p>
+                        </form>
+                    </div>
+                </dialog>
                 <!--fenêtre modale pour les fiches projets-->
                 <dialog id="js-modalProject" class="modalProject">
                     <div class="modalProject__container">
@@ -310,7 +339,7 @@
                 <h3 data-i18="sectionContact_subtitle"></h3> 
                 <p class="contact__text" data-i18="sectionContact_text"></p>
                 <div class="contact__methods">
-                    <a class="contact__link" href="mailto: corinne.wilwert@yahoo.fr">
+                    <a class="contact__link js-contactBtn" href="mailto: corinne.wilwert@yahoo.fr">
                         <svg xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" viewBox="0 0 298 230" fill="none" version="1.1" id="svg2" sodipodi:docname="7e3dc2d1-c269-4d23-b16e-7883337a65b5.svg">
                             <defs id="defs2"/>
                             <sodipodi:namedview id="namedview2" pagecolor="#ffffff" bordercolor="#000000" borderopacity="0.25" inkscape:showpageshadow="2" inkscape:pageopacity="0.0" inkscape:pagecheckerboard="0" inkscape:deskcolor="#d1d1d1"/>

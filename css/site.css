@@ -271,8 +271,7 @@ svg {
    }
 }
 
-/*Section présentation*/
-
+/*Section about*/
 .sectionAbout {
    align-items: center;
    min-height: 60vh;
@@ -363,8 +362,6 @@ svg {
    background-size: contain;
    width: 100%;
    padding-top: 2rem;
-   border-top: 1px solid #F7F5FA;
-   border-bottom: 1px solid #F7F5FA;
 }
 
 .skill_list {
@@ -407,8 +404,6 @@ svg {
 }
 
 /*Section contact*/
-
-
 .contact__methods {
    display: flex;
    max-width: 50%;
@@ -454,7 +449,8 @@ svg {
    align-items: center;
    margin-top: 3rem;
    border-top: 1px solid #E3DCEB;
-   color:hsl(245, 17%, 29%)
+   color:hsl(245, 17%, 29%);
+   padding: 1rem;
 }
 
 /*Animations*/

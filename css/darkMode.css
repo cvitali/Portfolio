@@ -1,21 +1,35 @@
-
+/* Styles pour le mode sombre */
 .dark-mode {
   background-color: #222020;
   color: white;
 }
 
 .dark-mode .navbar {
-  background-color: #121212;
+  background-color: #222020;
 }
 
-.dark-mode h3, .dark-mode h4 {
+.dark-mode .sectionAbout, .dark-mode .skillsSection{
+  background-color: #27262C    ;    ;
+}
+
+.dark-mode h2, .dark-mode h4 {
   color: lightgray;
 }
 
-.dark-mode .presentation {
-  background-color: #1E1E1E;
+.dark-mode h3 {
+  color: #7A72FF;
 }
 
+/*section about*/
+.dark-mode .about__decorationSmall {
+  background-color: hsla(243, 100%, 72%, 0.5);
+}
+
+.dark-mode .about__decorationSmaller {
+  background-color: hsl(243, 100%, 72%);
+}
+
+/*section projects*/
 .js-projectCard-dark  {
   background-color: #1E1E1E;
   border: 1px solid #333;
@@ -30,6 +44,10 @@
     color: #B896C0;
 }
 
+.dark-mode .skill_list {
+  background-color: #7A72FF;
+}
+
 .js-contactIcon-dark {
   stroke: #6C63FF;
   fill: #6C63FF;
@@ -38,5 +56,11 @@
 .js-contactIcon-dark:hover path {
   stroke: #4A43CC;
   fill: #4A43CC;
+}
+
+/*footer*/
+.dark-mode .footer {
+  color: lightgray;
+  border-top: 1px solid hsl(245, 17%, 29%);
 }
 

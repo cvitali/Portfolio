@@ -1,5 +1,5 @@
-
-.modalProject[open] {
+/* Fenêtres modales: projets + contact */
+.modalProject[open], .modalContact[open] {
     width: 99%;
     height: auto;
     background-color: hsla(0, 2%, 16%, 0.7);
@@ -7,9 +7,10 @@
     align-items: center;
     justify-content: center;
     border: none;
+    overscroll-behavior: none;
 }
 
-.modalProject__container {
+.modalProject__container, .modalContact__container {
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -23,35 +24,35 @@
 }
 
 @media (min-width: 750px) {
-    .modalProject[open] {
+    .modalProject[open], .modalContact[open] {
         height: 99%;
     } 
 }
 
 @media (max-width: 987px) {
-    .modalProject[open] {
+    .modalProject[open], .modalContact[open] {
         align-items: start;    
     }
-    .modalProject__container {
+    .modalProject__container, .modalContact__container {
         width: 99%;
     }
 }
 
 @media (max-width: 1150px) {
-    .modalProject__container {
+    .modalProject__container, .modalContact__container {
         min-width: 80%;
         margin-top: 3rem;
         scroll-behavior: smooth;
     }    
 }
 
-.modalProject__closeBtn{
-    width: 2rem;
+.modalProject__closeBtn, .modalContact__closeBtn{
+    width: 0.5rem;
     aspect-ratio: 1;
     display: flex;
     align-items: center;
     line-height: 0.5rem;
-    font-size: 1.5rem;
+    font-size: 1rem;
     margin: 3rem;
     display: flex;
     justify-content: center;
@@ -64,13 +65,13 @@
     right: -2rem;
 }
 
-    .modalProject__closeBtn:hover {
+    .modalProject__closeBtn:hover, .modalContact__closeBtn:hover {
         background-color: #4A43CC;
         cursor: pointer;
     }
 
 @media (max-width: 400px) { 
-    .modalProject__closeBtn {   
+    .modalProject__closeBtn, .modalContact__closeBtn {   
         height: 1rem;
         top:-3rem;
         right:-3rem;
@@ -78,17 +79,18 @@
     } 
 }
 
+.modalProject__title, .modalContact__title {
+    font-size: 1.4rem; 
+    font-size: clamp(1rem, 2vw, 1.4rem); 
+    color: #1E1D26;  
+}
+
+/*fenêtre modale projets*/
 .modalProject__image {
     height: 20vh;
     border: 3px solid #E3DCEB;
     box-shadow: 5px 5px 10px #E3DCEB;
     margin-bottom: 2rem;
-}
-
-.modalProject__title {
-    font-size: 1.4rem; 
-    font-size: clamp(1rem, 2vw, 1.4rem); 
-    color: #1E1D26;  
 }
 
 .modalProject__subtitle {
@@ -133,4 +135,53 @@
     font-size: 1.2rem;
     margin-bottom: 1rem;
     color: #6C1FA0;
+}
+
+/*fenêtre modale contact*/
+.form__group {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.modalContact__groupName {
+    display: flex;
+}
+
+.groupNameLabel {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+}
+
+.groupNameLabel__firstname {
+    margin-left: 4%;
+}
+
+.modalContact__groupEmail {
+    display: flex;
+    flex-direction: column;
+}
+
+.modalContact__groupMessage {
+    display: flex;
+    flex-direction: column;
+}
+
+.contactFormInfo {
+    font-size: 0.8rem;
+    color: #3F3D56;
+    margin-top: 1rem;
+}
+
+@media (max-width: 450px ) {
+    .modalContact__groupName {
+        flex-direction: column;
+    }
+    .groupNameLabel {
+        width: 100%;
+    }
+    .groupNameLabel__firstname {
+        margin-left: 0;
+        margin-top: 1rem;
+    }
 }

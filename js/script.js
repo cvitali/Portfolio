@@ -11,40 +11,9 @@ radiobuttons.forEach(radiobutton => {
     radiobutton.addEventListener('change', () => {
         if (radiobutton.id === 'darkMode__on') {
             document.body.classList.add('dark-mode')
-            projectCards.forEach(card => {
-                card.classList.remove('js-projectCard-light')
-                card.classList.add('js-projectCard-dark')
-            })
-            contactIcons.forEach(icon => {
-                icon.classList.remove('js-contactIcon-light')
-                icon.classList.add('js-contactIcon-dark')
-            })
-            projectNames.forEach(name => {
-                name.classList.remove('js-projectName-light')
-                name.classList.add('js-projectName-dark')
-            })
-                projectTechnos.forEach(techno => {
-                techno.classList.remove('js-projectTechno-light')
-                techno.classList.add('js-projectTechno-dark')
-            })
+           
         } else {
             document.body.classList.remove('dark-mode')
-            projectCards.forEach(card => {
-                card.classList.remove('js-projectCard-dark')
-                card.classList.add('js-projectCard-light')
-            })
-            contactIcons.forEach(icon => {
-                icon.classList.remove('js-contactIcon-dark')
-                icon.classList.add('js-contactIcon-light')
-            })
-            projectNames.forEach(name => { 
-                name.classList.remove('js-projectName-dark')
-                name.classList.add('js-projectName-light')      
-            })
-            projectTechnos.forEach(techno => {
-                techno.classList.remove('js-projectTechno-dark')
-                techno.classList.add('js-projectTechno-light')
-             })
         }
     })
 })
@@ -121,10 +90,32 @@ projectsLinksSmall.forEach(link => {
 })
 
 // Fermeture de la fiche projet
-const closeModalBtn = document.querySelector('.js-closeModal')
-closeModalBtn.addEventListener('click', () => {
-    projectDialog.close()
+const closeModalBtn = document.querySelectorAll('.js-closeModal')
+closeModalBtn.forEach(btn => {
+    btn.addEventListener('click', () => {
+        console.log('close modal')
+        projectDialog.close()
+    })
 })
+
+//Ouverture du formulaire de contact
+const contactButtons = document.querySelectorAll('.js-contactBtn')
+const contactDialog = document.getElementById('js-modalContact')
+contactButtons.forEach(button => {
+    button.addEventListener('click', (event) => {
+        event.preventDefault()
+        contactDialog.showModal()
+    })  
+})
+
+// Fermeture du formulaire de contact
+const closeContactBtn = document.querySelectorAll('.js-closeContact')
+closeContactBtn.forEach(btn => {
+    btn.addEventListener('click', () => {
+        contactDialog.close()
+    })
+})
+
 
 
 
