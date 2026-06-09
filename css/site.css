@@ -1,5 +1,4 @@
 
-
 /*bar de navigation*/
 .navbar {
    font-family: "Just Me Again Down Here";
@@ -44,7 +43,7 @@
    margin-right: 0.5rem;
    font-family: 'Titillium Web', sans-serif;
    font-weight: 600;
-   font-size: 1.5rem;
+   font-size: 1rem;
    border: 1px solid white;
    border-radius: 100px;
    aspect-ratio: 1;
@@ -52,19 +51,24 @@
    display: flex;
    align-items: center;
    padding: 0.2rem;
+   max-width: 100%;
 }
 
-@media screen and (max-width: 970px) {
+@media screen and (max-width: 1034px) {
    .navbar__logoInitiales {
       margin-left: 1rem;
    }
    
 }
 
-@media screen and (max-width: 270px) {
+@media screen and (max-width: 990px) {
    .navbar__logoTxt {
       display: none;
    }  
+   .navbar__logoInitiales {
+      margin-left: 2rem;
+      font-size: 1.5rem;
+   }
 }
 
 .navbar__links {
@@ -75,12 +79,16 @@
    display: flex;
 }
 
-.navbar__selectLanguage, .dark-mode__button {
+/*.navbar__selectLanguage, */.dark-mode__button {
    cursor: pointer;
    background-color: #6C63FF;
    color: white;
    padding: 0.5rem;
    margin: 1rem;
+}
+
+.navbar__selectLanguage{
+   display: none;
 }
 
 .navbar__dark-mode {
@@ -122,10 +130,10 @@
    display: none;
    flex-direction: column;
    cursor: pointer;
-   margin-right: 2rem;
-   position: absolulte;
+   margin-right: 2.5rem;
+   /*position: absolulte;
    top: 0;
-   right: 0;
+   right: 0;*/
    height: 2.5rem;
    width: 2.5rem;
    padding-top: 0.2rem;
@@ -310,14 +318,13 @@ svg {
 }
 
 .about__image {
-   height: 30vh;
+   max-height: 32vh;
    width: auto;
    align-self: center;
    justify-self: center;
    margin-right: 3rem;
    /*border: 2px solid  #3F3D56;*/
-   align-self: center;
-   /*border-radius: 10px;*/
+   /*border-radius: 100%;*/
 }
 
 .about__decorationBig {
