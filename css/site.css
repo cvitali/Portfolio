@@ -57,8 +57,7 @@
 @media screen and (max-width: 1034px) {
    .navbar__logoInitiales {
       margin-left: 1rem;
-   }
-   
+   }   
 }
 
 @media screen and (max-width: 990px) {
@@ -79,7 +78,7 @@
    display: flex;
 }
 
-/*.navbar__selectLanguage, */.dark-mode__button {
+.navbar__selectLanguage, .dark-mode__button {
    cursor: pointer;
    background-color: #6C63FF;
    color: white;
@@ -87,9 +86,9 @@
    margin: 1rem;
 }
 
-.navbar__selectLanguage{
+/*.navbar__selectLanguage{
    display: none;
-}
+}*/
 
 .navbar__dark-mode {
    display: flex;
@@ -381,6 +380,10 @@ svg {
    padding-top: 2rem;
 }
 
+.skills {
+   text-transform: uppercase;
+}
+
 .skill_list {
    background-color: #4A43CC;
    color:white;
@@ -393,7 +396,6 @@ svg {
    justify-items: center;
    font-size: clamp(0.7rem, 1vw, 1rem);
    font-weight: bolder;
-
 }
 
 .skill_listItem {

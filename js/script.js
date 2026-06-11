@@ -1,4 +1,5 @@
 import projectDetails from './projectDetails.js'
+import projectDetailsEn from './projectDetailsEn.js'
 
 // Sélection du Dark Mode
 const radiobuttons = document.querySelectorAll('.js-dark-mode');
@@ -20,9 +21,9 @@ radiobuttons.forEach(radiobutton => {
 
 // Sélection de la langue
 const selectLanguage = document.querySelector('.js-selectLanguage');
-let currentLanguage = loadLanguage('fr'); // langue par défaut
+let selectedLanguage = loadLanguage('fr'); // langue par défaut
 selectLanguage.addEventListener('click', () => {
-    const selectedLanguage = selectLanguage.value;
+    selectedLanguage = selectLanguage.value;
     loadLanguage(selectedLanguage);
 })
 
@@ -71,10 +72,15 @@ projectLinks.forEach(link => {
         event.preventDefault()
         // Récupération de l'index du projet à afficher à partir du lien cliqué
         const projectIndex = Array.from(projectLinks).indexOf(link)
+        //récupération du texte en fonction de la langue sélectionnée
+        let projectData = projectDetails[projectIndex]
+        if (selectLanguage.value === 'en') {
+            projectData = projectDetailsEn[projectIndex]
+        }
         // Affichage dynamique du contenu de la fiche projet en fonction de l'index
-        const projectData = projectDetails[projectIndex]
+        
         showDataInModal(projectData.image, projectData.title, projectData.description, projectData.stack, projectData.technologies, projectData.objective, projectData.info)
-
+        console.log(projectData)
         projectDialog.showModal()
     })
 })

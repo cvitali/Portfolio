@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Corinne Vitali</title>
+        <title>Corinne VITALI</title>
         <link rel="stylesheet" href="../css/reset.css">
         <link rel="stylesheet" href="../css/style.css">
         <link rel="stylesheet" href="../css/site.css">
@@ -38,10 +38,10 @@
                         </a>
                     </div>
                     <div class="navbar__links js-navItems js-navItems-hidden ">
-                        <a class="navbar__link" href="#aboutSection">A propos</a>
-                        <a class="navbar__link" href="#projectsSection">Portfolio</a>
-                        <a class="navbar__link" href="#skillsSection">Compétences</a>
-                        <a class="navbar__link js-contactBtn" href="#contactSection">Contact</a>
+                        <a class="navbar__link" href="#aboutSection" data-i18="navbar_about"></a>
+                        <a class="navbar__link" href="#projectsSection" data-i18="navbar_portfolio"></a>
+                        <a class="navbar__link" href="#skillsSection" data-i18="navbar_skills"></a>
+                        <a class="navbar__link js-contactBtn" href="#contactSection" data-i18="navbar_contact"></a>
                     </div>
                     <div class="navbar__settings js-navItems js-navItems-hidden">
                         <select class="navbar__selectLanguage js-selectLanguage border-smoky-gray" name="language" id="language">
@@ -53,7 +53,7 @@
                                 <input class="dark-mode__radio js-dark-mode" type="radio" id="darkMode__off" name="darkMode" checked >
                                 <input class="dark-mode__radio js-dark-mode" type="radio" id="darkMode__on" name="darkMode" >
                             </label>
-                            <p>Mode sombre</p>
+                            <p data-i18="navbar_darkMode"></p>
                         </div>
                     </div>
                 </div>
@@ -97,14 +97,14 @@
                 <span class="anchor" id="aboutSection"></span>
             </section>
             <section class="sectionAbout" id="about">
-                <h3>Mon parcours</h3>
+                <h3 data-i18="sectionAbout_title"></h3>
                 <div class="about">
                     <div class="about__decorationSmaller"></div>
                     <img class="about__image" src="../assets/images/about2.png" alt="photo portrait">
                     <div class="justify about__text">
-                        <p clas="about__textP" data-i18="presentation_text1"></p>
-                        <p clas="about__textP" data-i18="presentation_text2"></p>
-                        <p clas="about__textP" data-i18="presentation_text3"></p>
+                        <p class="about__textP" data-i18="presentation_text1"></p>
+                        <p class="about__textP" data-i18="presentation_text2"></p>
+                        <p class="about__textP" data-i18="presentation_text3"></p>
                     </div>
                 </div>
                 <div class="about__decorationBig color-gradient"></div>
@@ -118,28 +118,29 @@
                 <dialog id="js-modalContact" class="modalContact">
                     <div class="modalContact__container">
                         <button class="modalContact__closeBtn js-closeContact" aria-label="Fermer la fenêtre">X</button>
-                        <h2 class="modalContact__title">Contactez-moi</h2>
-                        <form class="modalContact__form" id="contactForm" name="contact" netlify>
+                        <h2 class="modalContact__title" data-i18="contactform_title"></h2>
+                        <form class="modalContact__form" id="contactForm" name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
+                            <input type="hidden" name="bot-field">
                             <div class="form__group modalContact__groupName">
-                                <label class="groupNameLabel groupNameLabel__lastname" for="lastname">Nom :
+                                <label class="groupNameLabel groupNameLabel__lastname" for="lastname"><span data-i18="contactform_LastName"></span>
                                     <input type="text" id="lastname" name="lastname" required>
                                 </label>
-                                <label class="groupNameLabel groupNameLabel__firstname" for="firstname">Prénom :
+                                <label class="groupNameLabel groupNameLabel__firstname" for="firstname"><span data-i18="contactform_FirstName"></span>
                                     <input type="text" id="firstname" name="firstname" required>
                                 </label>
                             </div>
                             <div class="form__group modalContact__groupEmail">
-                                <label for="email">Email :</label>
+                                <label for="email"><span data-i18="contactform_Email"></span></label>
                                 <input type="email" id="email" name="email" required>
                             </div>
                             <div class="form__group modalContact__groupMessage">
-                                <label for="subject">Sujet :</label>
+                                <label for="subject"><span data-i18="contactform_Subject"></span></label>
                                 <input type="text" id="subject" name="subject" required>
-                                <label for="message">Message :</label>
+                                <label for="message"><span data-i18="contactform_Message"></span></label>
                                 <textarea id="message" name="message" required></textarea>
                             </div>
-                            <button type="submit" class="form__submit">Envoyer</button>
-                            <p class="contactFormInfo">« Les informations saisies sont utilisées uniquement pour répondre à votre message. »</p>
+                            <button type="submit" class="form__submit" data-i18="contactform_submit"></button>
+                            <p class="contactFormInfo" data-i18="contactform_info"></p>
                         </form>
                     </div>
                 </dialog>
@@ -152,15 +153,15 @@
                         <h3 class="modalProject__subtitle js-modalProjectSubtitle"></h3>
                         <div class="modalProject__stack js-modalProjectStack"></div>
                         <div class="modalProject__tasks">
-                            <h5 class="modalProject__tasksTitle">Fonctionnalités & aspects techniques :</h5>
+                            <h5 class="modalProject__tasksTitle" data-i18="projectFile_Functions"></h5>
                             <ul class="modalProject__taskList js-modalProjectTask"></ul>
                         </div> 
                         <div class="modalProject__objectives">
-                            <h5 class="modalProject__ObjectivesTitle">Objectifs du projet :</h5> 
+                            <h5 class="modalProject__ObjectivesTitle" data-i18="projectFile_Objectives"></h5> 
                             <p class="modalProject__objectivesText js-modalProjectObjective"></p>
                         </div>  
                         <div class="modalProject__infos">
-                            <h5 class="modalProject__infosTitle">Informations complémentaires :</h5> 
+                            <h5 class="modalProject__infosTitle" data-i18="projectFile_Info"></h5> 
                             <p class="modalProject__infosText js-modalProjectInfos"></p>
                         </div>  
                     </div>
@@ -171,11 +172,9 @@
                         <div class="project__imageContainer">
                             <div class="js-project__imageHover js-hidden">
                                 <div class="project__links project__linksHover ">
-                                    <a  class="project__link " href="https://vitamouv.fr" target="_blank">
-                                    Site Web  
+                                    <a data-i18="projectCard_websiteLink" class="project__link " href="https://vitamouv.fr" target="_blank">
                                     </a>    
-                                    <a class="project__link " href="https://github.com/cvitali/Vitamouv" target="_blank">
-                                        GitHub
+                                    <a data-i18="projectCard_GithubLink" class="project__link " href="https://github.com/cvitali/Vitamouv" target="_blank">
                                     </a>
                                 </div>
                             </div>
@@ -183,33 +182,26 @@
                         </div>
                         <div class="project__cardFooter">
                             <div class="project__description">
-                                <h5 class="project__name js-projectName js-projectName-light">Site Vitrine</h5>
+                                <h5 class="project__name js-projectName js-projectName-light" data-i18="projectCard_title1"></h5>
                                 <p class="js-projectTechno">Asp.NET Core - C# - JavaScript - HTML - CSS</p>
-                                <a class="project__link project__linkFile js-project__linkFile">
-                                       Voir la fiche projet détaillée
+                                <a class="project__link project__linkFile js-project__linkFile" data-i18="projectCard_projectFileLink">
                                 </a>  
                             </div>
                             <div class="project__links project__linksNoHover">
-                                    <a  class="project__link " href="https://vitamouv.fr" target="_blank">
-                                        Site Web
+                                    <a data-i18="projectCard_websiteLink" class="project__link " href="https://vitamouv.fr" target="_blank">
                                     </a>   
-                                    <a class="project__link " href="https://github.com/cvitali/Vitamouv" target="_blank">
-                                        GitHub
+                                    <a data-i18="projectCard_GithubLink" class="project__link " href="https://github.com/cvitali/Vitamouv" target="_blank">
                                     </a>
                             </div>
-                            
-                           
                         </div>
                     </div>
                     <div class="project__card js-projectCard">
                         <div class="project__imageContainer">
                             <div class="js-project__imageHover js-hidden">
                                 <div class="project__links project__linksHover ">
-                                <a  class="project__link " href="https://ma-billetterie.onrender.com/" target="_blank">
-                                    Live Demo    
+                                <a data-i18="projectCard_demoLink" class="project__link " href="https://ma-billetterie.onrender.com/" target="_blank">
                                 </a>    
-                                <a class="project__link " href="https://github.com/cvitali/BachelorParis2024" target="_blank">
-                                    GitHub
+                                <a data-i18="projectCard_GithubLink" class="project__link " href="https://github.com/cvitali/BachelorParis2024" target="_blank">
                                 </a>
                             </div>
                             </div>
@@ -217,18 +209,15 @@
                         </div>
                         <div class="project__cardFooter">
                             <div class="project__description">
-                                <h5 class="project__name js-projectName js-projectName-light">Billetterie en ligne - Appli web</h5>
+                                <h5 class="project__name js-projectName js-projectName-light" data-i18="projectCard_title2"></h5>
                                 <p class="js-projectTechno">Asp.NET Core - C# - JavaScript - HTML - CSS</p>
-                                <a class="project__link project__linkFile js-project__linkFile">
-                                    Voir la fiche projet détaillée
+                                <a class="project__link project__linkFile js-project__linkFile" data-i18="projectCard_projectFileLink">
                                 </a>
                             </div>
                             <div class="project__links project__linksNoHover">
-                                    <a  class="project__link " href="https://ma-billetterie.onrender.com/" target="_blank">
-                                        Site    
+                                    <a data-i18="projectCard_demoLink" class="project__link " href="https://ma-billetterie.onrender.com/" target="_blank">
                                     </a>   
-                                    <a class="project__link " href="https://github.com/cvitali/BachelorParis2024" target="_blank">
-                                        GitHub
+                                    <a data-i18="projectCard_GithubLink" class="project__link " href="https://github.com/cvitali/BachelorParis2024" target="_blank">
                                     </a>
                             </div>
                         </div>
@@ -237,11 +226,9 @@
                         <div class="project__imageContainer">
                             <div class="js-project__imageHover js-hidden">
                                 <div class="project__links project__linksHover">
-                                <a  class="project__link " href="https://myadventcalendar.netlify.app/" target="_blank">
-                                    Live Demo    
+                                <a data-i18="projectCard_demoLink" class="project__link " href="https://myadventcalendar.netlify.app/" target="_blank">
                                 </a>    
-                                <a class="project__link " href="https://github.com/cvitali/My-advent-calendar" target="_blank">
-                                    GitHub
+                                <a data-i18="projectCard_GithubLink" class="project__link " href="https://github.com/cvitali/My-advent-calendar" target="_blank">
                                 </a>
                             </div>
                             </div>
@@ -249,18 +236,15 @@
                         </div>
                         <div class="project__cardFooter">
                             <div class="project__description">
-                                <h5 class="project__name js-projectName js-projectName-light">Calendrier de l'Avent interactif</h5>
-                                <p class="js-projectTechno">JavaScript - HTML - SASS</p>
-                                <a class="project__link project__linkFile js-project__linkFile">
-                                    Voir la fiche projet détaillée
+                                <h5 class="project__name js-projectName js-projectName-light" data-i18="projectCard_title3"></h5>
+                                <p class="js-projectTechno" data-i18="projectCard_techno">JavaScript - HTML - SASS</p>
+                                <a class="project__link project__linkFile js-project__linkFile" data-i18="projectCard_projectFileLink">
                                 </a>
                             </div>
                             <div class="project__links project__linksNoHover">
-                                    <a  class="project__link " href="https://myadventcalendar.netlify.app/" target="_blank">
-                                        Site    
+                                    <a data-i18="projectCard_demoLink" class="project__link " href="https://myadventcalendar.netlify.app/" target="_blank"> 
                                     </a>   
-                                    <a class="project__link " href="https://github.com/cvitali/My-advent-calendar" target="_blank">
-                                        GitHub
+                                    <a data-i18="projectCard_GithubLink" class="project__link " href="https://github.com/cvitali/My-advent-calendar" target="_blank">
                                     </a>
                             </div>
                         </div>
@@ -269,11 +253,9 @@
                        <div class="project__imageContainer">
                             <div class="js-project__imageHover js-hidden">
                                 <div class="project__links project__linksHover">
-                                    <a  class="project__link  hidden">
-                                        Site    
+                                    <a data-i18="projectCard_websiteLink" class="project__link  hidden">
                                     </a>   
-                                    <a class="project__link " href="https://github.com/cvitali/Vitamouv" target="_blank">
-                                        GitHub
+                                    <a data-i18="projectCard_GithubLink" class="project__link " href="https://github.com/cvitali/Vitamouv" target="_blank">
                                     </a>
                                 </div>
                             </div>
@@ -281,15 +263,13 @@
                         </div>
                         <div class="project__cardFooter">
                            <div class="project__description">
-                                <h5 class="project__name js-projectName js-projectName-light">Système solaire animé</h5>
+                                <h5 class="project__name js-projectName js-projectName-light" data-i18="projectCard_title4"></h5>
                                 <p class="js-projectTechno">JavaScript - HTML - SASS</p>
-                                 <a class="project__link project__linkFile js-project__linkFile">
-                                    Voir la fiche projet détaillée
+                                 <a class="project__link project__linkFile js-project__linkFile" data-i18="projectCard_projectFileLink">
                                 </a>
                             </div>
                             <div class="project__links project__linksNoHover">  
-                                    <a class="project__link " href="https://github.com/cvitali/Vitamouv" target="_blank">
-                                        GitHub
+                                    <a data-i18="projectCard_GithubLink" class="project__link " href="https://github.com/cvitali/Vitamouv" target="_blank">
                                     </a>
                             </div>
                         </div>
@@ -298,7 +278,7 @@
                 <span class="anchor" id="skillsSection"></span>
             </section>
             <section class="skillsSection">
-                        <h3>Mes compétences</h3>
+                        <h3 data-i18="sectionSkills_title"></h3>
                         <ul>
                             <li class="skills skills__front">
                                 <h4>FRONT-END</h4>
@@ -322,7 +302,7 @@
                                  </ul>
                             </li>
                             <li class="skills outils">
-                                <h4>OUTILS ET WORKFLOWS</h4>
+                                <h4 data-i18="sectionSkills_tools"></h4>
                                 <ul class="skill_list">
                                     <li class="skill_listItem">Git/GitHub</li>
                                     <li class="skill_listItem">GitHub Actions</li>
@@ -360,8 +340,8 @@
         </main>
         <footer class="footer">
             <p>&copy; 2026 Corinne Vitali. Tous droits réservés.</p>
-            <p>Icons by <a target="_blank" href="https://icons8.com">Icons8</a></p>
-            <p>Hero image by <a target="_blank" href="https://undraw.co">Undraw</a></p>
+            <p>Icons by <a class="footer_link" target="_blank" href="https://icons8.com">Icons8</a></p>
+            <p>Hero image by <a class="footer_link" target="_blank" href="https://undraw.co">Undraw</a></p>
           
         </footer>
     </body>
