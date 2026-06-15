@@ -28,7 +28,14 @@
     border: 1px solid #E3DCEB;
     color: #8F2CD1;
     border-radius:1%;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
+
+.project__card:hover {
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+}
+
 
 .js-projectCard-light {
     border: 1px solid #E3DCEB;
@@ -49,8 +56,6 @@
     height: 100%;
     /*background-color: hsla(32, 100%, 69%, 0.3);*/
     background: linear-gradient(hsla(243, 100%, 69%, 0.2),hsla(243, 100%, 69%, 0.5), hsla(243, 100%, 69%, 0.8), hsl(243, 100%, 69%), hsl(243, 100%, 69%), hsla(243, 100%, 69%, 0.8), hsla(243, 100%, 69%, 0.5), hsla(243, 100%, 69%, 0.2));
-  
-
     display: flex;
     justify-content: center;
     align-items: center;   

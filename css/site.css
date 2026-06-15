@@ -418,6 +418,16 @@ svg {
    }
 }
 
+.skills__cv {
+   display: flex;
+   align-items: center;
+}
+
+.skills__cvSvg {
+   height: clamp(4rem, 8vw + 2rem, 6rem);
+   margin: 2rem auto 2rem auto;
+}
+
 .projects__text, .contact__text{
    font-size: clamp(1rem, 2vw, 1.5rem);
 }
