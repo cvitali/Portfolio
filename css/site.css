@@ -242,7 +242,7 @@ h1, .hero__subtitle {
    fill: black;
    background-color: black;
    animation: shake 0.5s;
-      animation-iteration-count: 1;
+   animation-iteration-count: 1;
 }
 
 .hero__contactImg {
@@ -309,8 +309,7 @@ svg {
     position: relative;
 }
 
-.about_text  {
-   font-size: clamp(0.9rem, 1vw + 0.5rem, 1.1rem);
+.about__text  {
    z-index: 2;
 }
 
@@ -422,8 +421,13 @@ svg {
 }
 
 .skills__cvSvg {
-   height: clamp(4rem, 8vw + 2rem, 6rem);
+   height: clamp(2rem, 4vw + 1rem, 3rem);
    margin: 2rem auto 2rem auto;
+}
+
+.skills__cvSvg:hover > .cvSvgColor {
+   stroke: black;
+   fill: black;
 }
 
 .projects__text, .contact__text{
@@ -436,31 +440,53 @@ svg {
    max-width: 50%;
 }
 
-.contact__link {
-   display: flex;
-}
-
-   .contact__link:hover {
-      animation: shake 0.5s;
-      animation-iteration-count: 1;
-   }
-
 .contactSection {
    display: flex;
    flex-direction: column;
    justify-items: center;
    align-items: center;
+   color: black;
 }
 
-.sectionContact_title {
-   margin-top: 2rem;
-   padding: 2rem;
+.sectionContact__text {
+   margin: 2rem;
+}
+
+.sectionContact__thanks {
+   margin: 5rem auto 0 auto;
+   border: 1 px solid red;
+}
+
+.sectionContact__thanksText {
+   font-size: 1.2;
 }
 
 .contact__text {
    text-align: center;
    font-size: 1.2rem;
    margin: 1rem auto;
+}
+
+.callToAction {
+   background-color: #4A43CC;
+   border-radius: 5px;
+   text-decoration: none;
+   padding: 10px;
+   transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+   .callToAction:hover {
+      transform: scale(1.05);
+      box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+      background-color: #6C63FF;
+   }
+
+.callToAction a {
+   text-decoration: none;
+   margin-bottom: 0;
+   font-size: clamp(1.1rem, 1.5vw + 0.5rem, 1.5rem);
+   font-weight: 700;
+   color: white;  
 }
 
 /*Footer*/
