@@ -425,6 +425,11 @@ svg {
    margin: 2rem auto 2rem auto;
 }
 
+.cvSvgColor {
+   stroke: #3F3D56;
+   fill: #3F3D56;
+}
+
 .skills__cvSvg:hover > .cvSvgColor {
    stroke: black;
    fill: black;
