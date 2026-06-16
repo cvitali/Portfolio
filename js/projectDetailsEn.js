@@ -37,6 +37,23 @@ const projectDetailsEn = [
         "info": "Initially deployed on Azure with SQL Server, then migrated to Render (PostgreSQL) to reduce costs. The free plan involves a wake-up time that can reach 50 seconds."
     },
     {   
+        "image": "../assets/images/portfolio.png",
+        "title": "Professional portfolio",
+        "description": "Personal front-end project",
+        "stack": ["HTML", "CSS", "SASS", "JavaScript", "localStorage", "Netlify"],
+        "technologies": [
+           "Responsive design with fully custom styling using pure CSS",
+           "Project grid featuring thumbnails, tech tags, and action buttons",
+           "Dynamic project detail rendering (Vanilla, JavaScript)",
+           "Subtle and well‑controlled animations",
+           "Internationalization system (FR/EN) powered by JSON and i18n",
+           "Contact form handled through Netlify Forms",
+           "Continuous deployment on Netlify"
+        ],
+        "objective":"Showcase my projects in a visual and impactful way while highlighting my technical skills and professional identity.",
+        "info": "Planned improvement: adding a lightweight back-end and database to easily manage and add new projects."
+    }, 
+    {   
         "image": "../assets/images/calendrier.png",
         "title": "Interactive Advent Calendar",
         "description": "Personal front-end project",
@@ -53,19 +70,7 @@ const projectDetailsEn = [
         ],
         "objective": "The goal was to create a fun and smooth experience, while strengthening my front-end skills.",
         "info": "Planned improvement: adding a demo mode to open all cells."
-    },
-    {   
-        "image": "../assets/images/systemSolaire.png",
-        "title": "Animated Solar System",
-        "description": "Front-end project conducted within the framework of a guided assignment",   
-        "stack": ["HTML", "SASS", "CSS Animations"],
-        "technologies": [
-            "Complete project realized with HTML and SASS",
-            "CSS animations to simulate planetary orbits"
-        ],
-        "objective": "Discover the animation possibilities offered by CSS and SASS.",
-        "info": "Project not deployed but available on GitHub."
-    }   
+    }
 ]
 
 export default projectDetailsEn

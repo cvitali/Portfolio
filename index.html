@@ -45,8 +45,8 @@
                     </div>
                     <div class="navbar__settings js-navItems js-navItems-hidden">
                         <select class="navbar__selectLanguage js-selectLanguage border-smoky-gray" name="language" id="language">
-                            <option value="en">EN</option>
-                            <option value="fr" selected>FR</option>
+                            <option class="js-selectLanguageImg" value="en">EN</option>
+                            <option class="js-selectLanguageImg" value="fr" selected>FR</option>
                         </select>
                         <div class="navbar__dark-mode">
                             <label for="dark-mode" class="dark-mode__button border-smoky-gray">
@@ -248,6 +248,33 @@
                         <div class="project__imageContainer">
                             <div class="js-project__imageHover js-hidden">
                                 <div class="project__links project__linksHover">
+                                <a data-i18="projectCard_websiteLink" class="project__link " href="https://corinnevitali.netlify.app/" target="_blank">
+                                </a>    
+                                <a data-i18="projectCard_GithubLink" class="project__link " href="https://github.com/cvitali/Portfolio" target="_blank">
+                                </a>
+                            </div>
+                            </div>
+                            <img class="project__image" src="./assets/images/portfolio.png" alt="Calendrier de l'Avent en ligne - site web">
+                        </div>
+                        <div class="project__cardFooter">
+                            <div class="project__description">
+                                <h5 class="project__name js-projectName js-projectName-light" data-i18="projectCard_title3"></h5>
+                                <p class="js-projectTechno" data-i18="projectCard_techno">JavaScript - HTML - CSS</p>
+                                <a class="project__link project__linkFile js-project__linkFile" data-i18="projectCard_projectFileLink">
+                                </a>
+                            </div>
+                            <div class="project__links project__linksNoHover">
+                                    <a data-i18="projectCard_websiteLink" class="project__link " href="https://corinnevitali.netlify.app/" target="_blank"> 
+                                    </a>   
+                                    <a data-i18="projectCard_GithubLink" class="project__link " href="https://github.com/cvitali/Portfolio" target="_blank">
+                                    </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project__card js-projectCard">
+                        <div class="project__imageContainer">
+                            <div class="js-project__imageHover js-hidden">
+                                <div class="project__links project__linksHover">
                                 <a data-i18="projectCard_demoLink" class="project__link " href="https://myadventcalendar.netlify.app/" target="_blank">
                                 </a>    
                                 <a data-i18="projectCard_GithubLink" class="project__link " href="https://github.com/cvitali/My-advent-calendar" target="_blank">
@@ -258,7 +285,7 @@
                         </div>
                         <div class="project__cardFooter">
                             <div class="project__description">
-                                <h5 class="project__name js-projectName js-projectName-light" data-i18="projectCard_title3"></h5>
+                                <h5 class="project__name js-projectName js-projectName-light" data-i18="projectCard_title4"></h5>
                                 <p class="js-projectTechno" data-i18="projectCard_techno">JavaScript - HTML - SASS</p>
                                 <a class="project__link project__linkFile js-project__linkFile" data-i18="projectCard_projectFileLink">
                                 </a>
@@ -267,31 +294,6 @@
                                     <a data-i18="projectCard_demoLink" class="project__link " href="https://myadventcalendar.netlify.app/" target="_blank"> 
                                     </a>   
                                     <a data-i18="projectCard_GithubLink" class="project__link " href="https://github.com/cvitali/My-advent-calendar" target="_blank">
-                                    </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project__card js-projectCard">
-                       <div class="project__imageContainer">
-                            <div class="js-project__imageHover js-hidden">
-                                <div class="project__links project__linksHover">
-                                    <a data-i18="projectCard_websiteLink" class="project__link  hidden">
-                                    </a>   
-                                    <a data-i18="projectCard_GithubLink" class="project__link " href="https://github.com/cvitali/Vitamouv" target="_blank">
-                                    </a>
-                                </div>
-                            </div>
-                            <img class="project__image" src="./assets/images/systSol.png" alt="Système solaire">
-                        </div>
-                        <div class="project__cardFooter">
-                           <div class="project__description">
-                                <h5 class="project__name js-projectName js-projectName-light" data-i18="projectCard_title4"></h5>
-                                <p class="js-projectTechno">JavaScript - HTML - SASS</p>
-                                 <a class="project__link project__linkFile js-project__linkFile" data-i18="projectCard_projectFileLink">
-                                </a>
-                            </div>
-                            <div class="project__links project__linksNoHover">  
-                                    <a data-i18="projectCard_GithubLink" class="project__link " href="https://github.com/cvitali/Vitamouv" target="_blank">
                                     </a>
                             </div>
                         </div>
@@ -337,7 +339,7 @@
                             </li>
                         </ul>
                         <a class="skills__cv" href="./assets/files/cv.pdf" download title="Télécharger mon CV au format pdf">    
-                                <svg class="skills__cvSvg" version="1.0" xmlns="http://www.w3.org/2000/svg" width="5rem" viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet" role="img">
+                                <svg class="skills__cvSvg" version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet" role="img">
                                     <title>Télécharger mon CV</title>
                                     <g transform="translate(0,512) scale(0.1,-0.1)" fill="#7A72FF" stroke="#7A72FF" stroke-width="80" >
                                         <path d="M375 4996 c-108 -34 -195 -110 -242 -211 l-28 -60 -3 -1900 c-2 -2108 -8 -1944 64 -2050 41 -61 86 -98 162 -133 48 -22 75 -27 168 -30 l112 -4 4 -112 c3 -93 8 -120 30 -168 37 -79 70 -120 131 -161 107 -72 -2 -68 1542 -65 l1390 3 63 29 c80 37 161 122 194 203 23 57 23 65 26 481 l3 423 505 1322 c278 727 510 1344 515 1371 21 111 -27 244 -120 336 -190 187 -489 180 -626 -14 -17 -25 -82 -181 -150 -360 l-120 -316 -5 318 -5 317 -27 58 c-76 163 -199 237 -389 237 l-89 0 0 63 c0 195 -79 336 -228 405 l-57 27 -1390 2 c-1103 1 -1398 -1 -1430 -11z m2796 -151 c101 -36 148 -115 149 -247 l0 -88 -1213 -2 -1212 -3 -61 -28 c-77 -36 -154 -113 -191 -192 l-28 -60 -3 -1732 -2 -1733 -74 0 c-129 0 -215 41 -259 123 l-22 42 0 1885 0 1885 28 47 c30 51 70 84 126 104 29 11 307 13 1377 14 1184 0 1347 -2 1385 -15z m534 -512 c22 -11 52 -34 67 -50 59 -61 58 -55 58 -619 l0 -517 -341 -896 c-188 -493 -346 -908 -352 -922 -8 -20 3 -106 49 -385 82 -502 58 -490 401 -209 l238 195 3 -256 c2 -245 1 -259 -19 -301 -24 -50 -83 -98 -140 -113 -24 -7 -501 -9 -1391 -8 l-1353 3 -45 25 c-51 29 -97 90 -110 146 -6 23 -10 809 -10 1880 0 2056 -5 1909 70 1984 73 73 -20 69 1485 67 l1350 -2 40 -22z m981 -107 c105 -49 174 -142 174 -236 0 -42 -44 -180 -58 -180 -5 0 -307 124 -438 180 l-44 19 35 82 c19 45 42 90 51 100 56 61 187 78 280 35z m-180 -462 c126 -52 233 -99 237 -103 4 -4 -2 -31 -15 -58 l-23 -51 -230 95 c-126 52 -234 98 -239 103 -9 9 23 110 34 110 4 0 110 -43 236 -96z m-243 -195 c42 -17 77 -36 77 -42 0 -8 -858 -2258 -864 -2264 0 0 -37 14 -81 32 -60 25 -80 39 -79 52 0 31 848 2253 859 2253 6 0 45 -14 88 -31z m304 -125 c38 -15 72 -30 77 -35 4 -4 -166 -463 -379 -1021 -213 -557 -407 -1064 -431 -1127 -24 -63 -46 -116 -48 -119 -8 -7 -167 61 -164 70 33 98 865 2258 870 2258 4 0 38 -12 75 -26z m-1059 -2361 c89 -36 161 -70 159 -76 -3 -10 -290 -247 -294 -243 -3 3 -63 367 -63 384 0 17 -14 21 198 -65z"/>

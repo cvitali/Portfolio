@@ -86,10 +86,6 @@
    margin: 1rem;
 }
 
-/*.navbar__selectLanguage{
-   display: none;
-}*/
-
 .navbar__dark-mode {
    display: flex;
    align-items: center;
@@ -245,6 +241,8 @@ h1, .hero__subtitle {
    stroke: black;
    fill: black;
    background-color: black;
+   animation: shake 0.5s;
+      animation-iteration-count: 1;
 }
 
 .hero__contactImg {

@@ -3,13 +3,13 @@ const projectDetails = [
         "image": "../assets/images/vitamouv.png",
         "title":"Vita'Mouv - Site professionnel pour une éducatrice sportive",
         "description": "Site web complet incluant la conception UX, le développement front/back et le déploiement",
-        "stack": ["HTML", "CSS", "JavaScript", "AJAX", "SendGrid", "ASP.NET Core", "Render"],
+        "stack": ["HTML5", "CSS3", "JavaScript", "AJAX", "Brevo", "ASP.NET Core", "Render"],
         "technologies": [
             "Analyse des besoins du client (contenu, structure, identité visuelle)",
             "Conception responsive",
             "Intégration cohérente de la charte graphique (couleurs, visuels)",
             "Intégration d’un formulaire de contact dynamique (AJAX)",
-            "Envoi d’emails via SendGrid",
+            "Envoi d’emails via Brevo",
             "Optimisation SEO",
             "Déploiement et mise en production"
         ],
@@ -37,6 +37,23 @@ const projectDetails = [
         "info": "Initialement déployé sur Azure avec SQL Server, puis migré vers Render (PostgreSQL) pour réduire les coûts. Le plan gratuit implique un temps de réveil pouvant atteindre 50 secondes."
     },
     {   
+        "image": "../assets/images/portfolio.png",
+        "title": "Portfolio professionnel",
+        "description": "Projet front-end personnel",
+        "stack": ["HTML5", "CSS3", "JavaScript", "JSON", "i18n", "Netlify"],
+        "technologies": [
+            "Conception responsive et design entièrement personnalisés en CSS pur", 
+            "Grille de projets avec vignettes, tags techniques et boutons d’accès",
+            "Affichage dynamique des fiches projets (Javascript Vanilla)",
+            "Animations légères et maîtrisées",
+            "Système d’internationalisation (FR/EN) basé sur JSON et i18n",
+            "Formulaire de contact géré via Netlify Forms",
+            "Déploiement continu sur Netlify",
+        ],
+        "objective": "Présenter mes projets de manière visuelle et impactante, tout en mettant en avant mes compétences techniques et mon identité professionnelle.",
+        "info": "Amélioration prévue : ajout d’un back-end léger et d’une base de données pour gérer et ajouter facilement de nouveaux projets."
+    },
+     {   
         "image": "../assets/images/calendrier.png",
         "title": "Calendrier de l'Avent interactif",
         "description": "Projet front-end personnel",
@@ -53,19 +70,7 @@ const projectDetails = [
         ],
         "objective": "L’objectif était de créer une expérience ludique et fluide, tout en renforçant mes compétences front-end.",
         "info": "Amélioration prévue : ajout d'un mode démo permettant d'ouvrir toutes les cases."
-    },
-    {   
-        "image": "../assets/images/systemSolaire.png",
-        "title": "Système solaire animé",
-        "description": "Projet front-end réalisé dans le cadre d'un travail dirigé",
-        "stack": ["HTML", "SASS", "CSS Animations"],
-        "technologies": [
-            "Projet entièrement réalisé avec HTML et SASS",
-            "Animations CSS pour simuler les orbites planétaires"
-        ],
-        "objective": "Découvrir les possibilités d'animation offertes par CSS et SASS.",
-        "info": "Projet non déployé mais disponible sur GitHub."
-    }   
+    }
 ]
 
 export default projectDetails

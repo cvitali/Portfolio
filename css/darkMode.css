@@ -12,7 +12,11 @@
   background-color: #27262C    ;    ;
 }
 
-.dark-mode h2, .dark-mode h4 {
+.dark-mode h2{
+  color: white;
+}
+
+.dark-mode h4 {
   color: #E4E2FF;
 }
 
