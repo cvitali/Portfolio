@@ -66,35 +66,36 @@
         </nav>
         <main>
             <!--fenêtre modale pour le formulaire de contact-->
-                <dialog id="js-modalContact" class="modalContact">
-                    <div class="modalContact__container">
-                        <button class="modalContact__closeBtn js-closeContact" aria-label="Fermer la fenêtre">X</button>
-                        <h2 class="modalContact__title" data-i18="contactform_title"></h2>
-                        <form class="modalContact__form" id="contactForm" name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
-                            <input type="hidden" name="bot-field">
-                            <div class="form__group modalContact__groupName">
-                                <label class="groupNameLabel groupNameLabel__lastname" for="lastname"><span data-i18="contactform_LastName">Nom</span>
-                                    <input type="text" id="lastname" name="lastname" required>
-                                </label>
-                                <label class="groupNameLabel groupNameLabel__firstname" for="firstname"><span data-i18="contactform_FirstName">Prénom</span>
-                                    <input type="text" id="firstname" name="firstname" required>
-                                </label>
-                            </div>
-                            <div class="form__group modalContact__groupEmail">
-                                <label for="email"><span data-i18="contactform_Email">Email</span></label>
-                                <input type="email" id="email" name="email" required>
-                            </div>
-                            <div class="form__group modalContact__groupMessage">
-                                <label for="subject"><span data-i18="contactform_Subject">Sujet</span></label>
-                                <input type="text" id="subject" name="subject" required>
-                                <label for="message"><span data-i18="contactform_Message">Message</span></label>
-                                <textarea id="message" name="message" required></textarea>
-                            </div>
-                            <button type="submit" class="form__submit" data-i18="contactform_submit">Envoyer</button>
-                            <p class="contactFormInfo" data-i18="contactform_info"></p>
-                        </form>
-                    </div>
-                </dialog>
+            <dialog id="js-modalContact" class="modalContact">
+                <div class="modalContact__container">
+                    <button class="modalContact__closeBtn js-closeContact" aria-label="Fermer la fenêtre">X</button>
+                    <h2 class="modalContact__title" data-i18="contactform_title"></h2>
+                    <form class="modalContact__form" id="contactForm" name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
+                        <input type="hidden" name="bot-field">
+                        <div class="form__group modalContact__groupName">
+                            <label class="groupNameLabel groupNameLabel__lastname" for="lastname"><span data-i18="contactform_LastName">Nom</span>
+                                <input type="text" id="lastname" name="lastname" required>
+                            </label>
+                            <label class="groupNameLabel groupNameLabel__firstname" for="firstname"><span data-i18="contactform_FirstName">Prénom</span>
+                                <input type="text" id="firstname" name="firstname" required>
+                            </label>
+                        </div>
+                        <div class="form__group modalContact__groupEmail">
+                            <label for="email"><span data-i18="contactform_Email">Email</span></label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form__group modalContact__groupMessage">
+                            <label for="subject"><span data-i18="contactform_Subject">Sujet</span></label>
+                            <input type="text" id="subject" name="subject" required>
+                            <label for="message"><span data-i18="contactform_Message">Message</span></label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+                        <button type="submit" class="form__submit" data-i18="contactform_submit">Envoyer</button>
+                        <p class="contactFormInfo" data-i18="contactform_info"></p>
+                    </form>
+                </div>
+            </dialog>
+            <!---------------------------------------------------------------------------->
             <section class="sectionHero">
                 <div class="hero">
                     <div class="hero__text">
@@ -115,7 +116,7 @@
                                     <path class="js-svgContact hero__contactSvgPath" d="M347.445,0H34.555C15.471,0,0,15.471,0,34.555v312.889C0,366.529,15.471,382,34.555,382h312.889  C366.529,382,382,366.529,382,347.444V34.555C382,15.471,366.529,0,347.445,0z M118.207,329.844c0,5.554-4.502,10.056-10.056,10.056  H65.345c-5.554,0-10.056-4.502-10.056-10.056V150.403c0-5.554,4.502-10.056,10.056-10.056h42.806  c5.554,0,10.056,4.502,10.056,10.056V329.844z M86.748,123.432c-22.459,0-40.666-18.207-40.666-40.666S64.289,42.1,86.748,42.1  s40.666,18.207,40.666,40.666S109.208,123.432,86.748,123.432z M341.91,330.654c0,5.106-4.14,9.246-9.246,9.246H286.73  c-5.106,0-9.246-4.14-9.246-9.246v-84.168c0-12.556,3.683-55.021-32.813-55.021c-28.309,0-34.051,29.066-35.204,42.11v97.079  c0,5.106-4.139,9.246-9.246,9.246h-44.426c-5.106,0-9.246-4.14-9.246-9.246V149.593c0-5.106,4.14-9.246,9.246-9.246h44.426  c5.106,0,9.246,4.14,9.246,9.246v15.655c10.497-15.753,26.097-27.912,59.312-27.912c73.552,0,73.131,68.716,73.131,106.472  L341.91,330.654L341.91,330.654z" fill="#1E1D26" stroke="#1E1D26"/>
                                 </svg>
                             </a>
-                            <a class="hero__contactlink hero__CVS" href="./assets/files/cv.pdf" download title="Télécharger mon CV au format pdf">    
+                            <a class="hero__contactlink hero__CVS" href="./assets/files/CV_FR_06-07.pdf" download title="Télécharger mon CV au format pdf">    
                                 <svg class="js-svgContact hero__contactSvg" version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet" role="img">
                                     <title>Télécharger mon CV</title>
                                     <g transform="translate(0,512) scale(0.1,-0.1)" fill="#7A72FF" stroke="#7A72FF" stroke-width="80" >
@@ -339,7 +340,7 @@
                                 </ul>
                             </li>
                         </ul>
-                        <a class="skills__cv" href="./assets/files/cv.pdf" download title="Télécharger mon CV au format pdf">    
+                        <a class="skills__cv" href="./assets/files/CV_FR_06-07.pdf" download title="Télécharger mon CV au format pdf">    
                             <title>Télécharger mon CV au format PDF</title>    
                             <svg class="skills__cvSvg" version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Téléchargez mon CV"> 
                                     <g class="cvSvgColor" transform="translate(0,512) scale(0.1,-0.1)" stroke-width="80" >
