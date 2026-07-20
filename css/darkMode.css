@@ -65,6 +65,10 @@
     color: #B896C0;
 }
 
+.dark-mode .modalProject__title {
+  color: #3F3D56;
+}
+
 .dark-mode .skill_list {
   background-color: #7A72FF;
 }
